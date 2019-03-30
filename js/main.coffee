@@ -117,3 +117,15 @@ $(document).ready ->
 
             # Add it to the DOM
             document.querySelector('.hacks').appendChild(document.importNode(template, true))
+
+  $('.controls__deprecated').click ->
+    deprecatedHack = $('.hack__status--deprecated').closest('.hack')
+
+    if $(deprecatedHack).is(':visible')
+      deprecatedHack.slideUp()
+      $(this).text('Show Deprecated')
+      $(this).addClass('controls__deprecated--active')
+    else
+      deprecatedHack.slideDown()
+      $(this).text('Hide Deprecated')
+      $(this).removeClass('controls__deprecated--active')

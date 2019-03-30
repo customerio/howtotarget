@@ -1,8 +1,11 @@
 .hack {
   border: 1px solid $grey-light;
   border-radius: $border-radius-lg;
-  margin-top: 1.5rem;
   overflow: hidden;
+
+  & + .hack {
+    margin-top: 1.5rem;
+  }
 }
 
 .hack__heading {
@@ -14,10 +17,10 @@
 
 .hack__client {
 	font-size: $font-size-lg;
+  font-weight: $font-weight-semibold;
 }
 
 .hack__status {
-	background: $grey-medium;
 	border-radius: $border-radius-md;
 	color: $white;
 	display: inline-block;
@@ -50,7 +53,7 @@
 
 .hack__code {
 	background: $grey-light;
-	border-radius: $border-radius-md;
+  border-radius: $border-radius-md;
 	display: block;
   font-size: $font-size-sm;
   // Stops #ffff from getting fancied up
