@@ -58,18 +58,18 @@ $(document).ready ->
             # Contributors
             hackContributorId = this.fields.Contributor
 
-
             for i of contributors
               if contributors[i].id == hackContributorId[0]
-                console.log contributors[i].fields.Name
-
                 root = contributors[i].fields
-
-                contributorElement = $(template).find('.hack__contributor')
-                contributorNameElement = $(template).find('.hack__contributor-name')
 
                 contributorName = root.Name
                 contributorEmail = root.Email
+                contributorSubmissions = root.Hacks.length
+
+                contributorElement = $(template).find('.hack__contributor')
+                contributorNameElement = $(template).find('.hack__contributor-name')
+                
+                $(template).find('.hack__contributor-submissions').text(contributorSubmissions)
 
                 if root.Website
                   contributorWebsite = root.Website
@@ -80,6 +80,8 @@ $(document).ready ->
                 else
                   contributorElement.text(contributorName)
                   contributorElement.attr('href', contributorWebsite)
+
+
 
 
 

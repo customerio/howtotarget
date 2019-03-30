@@ -53,3 +53,15 @@
   font-size: $font-size-sm;
   margin-top: 0.75rem;
 }
+
+.hack__contributor-submissions {
+  background: $grey-light;
+  border-radius: $border-radius-pill;
+  color: $grey-medium;
+  display: inline-block;
+  font-size: $font-size-xs;
+  line-height: 1;
+  padding: 0.125rem 0.25rem;
+  text-align: center;
+  width: 1.25rem;
+}
