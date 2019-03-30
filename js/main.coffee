@@ -103,10 +103,16 @@ $(document).ready ->
 
             if statusText == 'Working'
               $(statusElement).removeClass('hack__status--unknown')
+              $(statusElement).removeClass('hack__status--deprecated')
               $(statusElement).addClass('hack__status--working')
             else if statusText == 'Deprecated'
               $(statusElement).removeClass('hack__status--unknown')
+              $(statusElement).removeClass('hack__status--working')
               $(statusElement).addClass('hack__status--deprecated')
+            else if statusText == 'Deprecated'
+              $(statusElement).removeClass('hack__status--working')
+              $(statusElement).removeClass('hack__status--deprecated')
+              $(statusElement).addClass('hack__status--unknown')
 
 
 
