@@ -2,13 +2,14 @@
   border: 1px dotted $grey-medium;
   border-radius: $border-radius-lg;
   margin-top: 1.5rem;
-  padding: 1.5rem;
+  overflow: hidden;
 }
 
 .hack__heading {
   align-items: center;
 	display: flex;
 	justify-content: space-between;
+  padding: 1rem 1rem 0;
 }
 
 .hack__client {
@@ -39,19 +40,29 @@
   }
 }
 
+.hack__main {
+  padding: 1rem;
+
+  pre {
+    margin: 0;
+  }
+}
+
 .hack__code {
 	background: $grey-light;
 	border-radius: $border-radius-md;
 	display: block;
   font-size: $font-size-sm;
+  margin-bottom: 1rem;
 	padding: 1rem;
 	width: 100%;
 }
 
 .hack__meta {
+  background: $grey-light;
   color: $grey-medium;
   font-size: $font-size-sm;
-  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
 }
 
 .hack__contributor-submissions {

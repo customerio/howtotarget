@@ -13,13 +13,20 @@ now = moment()
 
 $(document).ready ->
 
+  # Clients
+  $.ajax
+    url: apiUrl + clientsTable + apiKey
+    type: 'GET'
+    dataType: 'json'
+    success: (result) ->
+      window.clients = result.records
+
   # Contributors
   $.ajax
     url: apiUrl + contributorsTable + apiKey
     type: 'GET'
     dataType: 'json'
     success: (result) ->
-
       contributors = result.records
 
       # Hacks - Nested so it doesn't execute before the contributors stuff, which is relies on
@@ -42,9 +49,7 @@ $(document).ready ->
             $(template).find('.hack__code').text(this.fields.Code)
             $(template).find('.hack__description').text(this.fields.Description)
             
-            if this.fields.Link == undefined
-              $(template).find('.hack__link').text()
-            else
+            if this.fields.Link
               $(template).find('.hack__link').text(this.fields.Link)
 
             relativeDate = moment(this.fields.Date).fromNow()
@@ -52,11 +57,24 @@ $(document).ready ->
             $(template).find('.hack__date').attr('datetime', this.fields.Date)
 
 
+            # Client
+            hackClientId = this.fields.Client.toString()
+
+            for i of clients
+              if clients[i].id == hackClientId
+                hackClient = clients[i].fields.Name
+
+            $(template).find('.hack__client').text(hackClient)
+
+            if (this.fields.Version)
+              $(template).find('.hack__client').append( ' (' + this.fields.Version + ')')
+
+
             # Contributors
-            hackContributorId = this.fields.Contributor
+            hackContributorId = this.fields.Contributor.toString()
 
             for i of contributors
-              if contributors[i].id == hackContributorId[0]
+              if contributors[i].id == hackContributorId
                 root = contributors[i].fields
 
                 contributorName = root.Name
