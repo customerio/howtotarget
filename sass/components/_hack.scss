@@ -1,12 +1,12 @@
 .hack {
-  border: 1px dotted $grey-light;
+  border: 1px dotted $grey-medium;
   border-radius: $border-radius-lg;
   margin-top: 1.5rem;
   padding: 1.5rem;
-  width: 50%;
 }
 
 .hack__heading {
+  align-items: center;
 	display: flex;
 	justify-content: space-between;
 }
@@ -16,12 +16,14 @@
 }
 
 .hack__status {
-	background: $black;
+	background: $grey-medium;
 	border-radius: $border-radius-md;
 	color: $white;
 	display: inline-block;
-  font-size: $font-size-sm;
-  padding: 0.125rem 0.25rem;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-semibold;
+  line-height: 1;
+  padding: 0.25rem 0.25rem;
 
   &--working {
   	background: $status-working;
@@ -46,6 +48,7 @@
 }
 
 .hack__meta {
+  color: $grey-medium;
   font-size: $font-size-sm;
   margin-top: 0.75rem;
 }
