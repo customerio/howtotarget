@@ -133,7 +133,7 @@ $(document).ready ->
       $(this).removeClass('controls__deprecated--active')
 
   # Input filter
-  $('.controls__filter').keyup ->
+  $('#filter-input').keyup ->
     valThis = $(this).val().toLowerCase()
     console.log valThis
     $('.hack__client').each ->

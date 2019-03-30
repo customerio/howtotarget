@@ -2,6 +2,7 @@
   border: 1px solid $grey-light;
   border-radius: $border-radius-lg;
   overflow: hidden;
+  width: 100%;
 
   & + .hack {
     margin-top: 1.5rem;

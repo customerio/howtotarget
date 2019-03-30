@@ -15,6 +15,21 @@
 	font-weight: $font-weight-semibold;
 }
 
+.controls__label,
+.controls__input {
+	display: block;
+	margin-top: 0.5rem;
+	width: 100%;
+}
+
+
+.controls__input {
+	appearance: none;
+	border: none;
+	border-radius: $border-radius-md;
+	padding: 0.5rem;
+}
+
 .controls__deprecated {
 	background: $status-working;
 	border: 0;
