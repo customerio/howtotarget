@@ -1,6 +1,7 @@
 # Variables for Airtable API
 apiUrl = 'https://api.airtable.com/v0/appMtIlikMxVLjN4K/'
 apiKey = '?api_key=keyxAIb6oLhX6lAp2'
+
 clientsTable = 'tblChr8nk7eOaEc2I'
 hacksTable = 'tblQoCy66y3WRFG3i'
 contributorsTable = 'tblxFY7eQBVeB6NEV'
@@ -12,8 +13,6 @@ now = moment()
 
 $(document).ready ->
 
-  current = 0
-
   # Hacks
   $.ajax
     url: apiUrl + hacksTable + apiKey
@@ -23,6 +22,7 @@ $(document).ready ->
 
       obj = result.records
       console.log obj.length
+
 
       # For each hack
       $.each obj, ->
@@ -45,8 +45,10 @@ $(document).ready ->
         $(template).find('.hack__date').text(relativeDate)
         $(template).find('.hack__date').attr('datetime', this.fields.Date)
 
+
         # Contributors
         hackContributorId = this.fields.Contributor
+
         $.ajax
           url: 'https://api.airtable.com/v0/appMtIlikMxVLjN4K/' + hacksTable + '/' + hackContributorId + apiKey
           type: 'GET'
@@ -68,6 +70,7 @@ $(document).ready ->
             else
               contributorElement.text(contributorName)
               contributorElement.attr('href', contributorWebsite)
+
 
         # Add it to the DOM
         document.querySelector('.hacks').appendChild(document.importNode(template, true))
