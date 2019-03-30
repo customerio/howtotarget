@@ -28,10 +28,7 @@ $(document).ready ->
         type: 'GET'
         dataType: 'json'
         success: (result) ->
-
           obj = result.records
-          console.log obj.length
-
 
           # For each hack
           $.each obj, ->
@@ -80,6 +77,18 @@ $(document).ready ->
                 else
                   contributorElement.text(contributorName)
                   contributorElement.attr('href', contributorWebsite)
+
+
+            # Colour for status badges
+            statusText = this.fields.Status.toString()
+            statusElement = $(template).find('.hack__status')
+
+            if statusText == 'Working'
+              $(statusElement).removeClass('hack__status--unknown')
+              $(statusElement).addClass('hack__status--working')
+            else if statusText == 'Deprecated'
+              $(statusElement).removeClass('hack__status--unknown')
+              $(statusElement).addClass('hack__status--deprecated')
 
 
 
