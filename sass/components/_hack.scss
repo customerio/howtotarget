@@ -1,5 +1,5 @@
 .hack {
-  border: 1px dotted $grey-medium;
+  border: 1px solid $grey-light;
   border-radius: $border-radius-lg;
   margin-top: 1.5rem;
   overflow: hidden;
@@ -58,6 +58,10 @@
 	width: 100%;
 }
 
+.hack__description {
+  line-height: 1.5;
+}
+
 .hack__meta {
   background: $grey-light;
   color: $grey-medium;
@@ -66,12 +70,15 @@
 }
 
 .hack__contributor-submissions {
-  background: $grey-light;
+  background: $grey-medium;
   border-radius: $border-radius-pill;
-  color: $grey-medium;
+  color: $white;
   display: inline-block;
   font-size: $font-size-xs;
+  font-weight: $font-weight-semibold;
   line-height: 1;
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
   padding: 0.125rem 0.25rem;
   pointer-events: none;
   text-align: center;
