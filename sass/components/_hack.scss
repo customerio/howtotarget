@@ -1,7 +1,8 @@
 .hack {
-  border: 1px solid $grey-light;
+  border: 1px dotted $grey-light;
   border-radius: $border-radius-lg;
-  padding: 2rem;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
 }
 
 .hack__heading {
@@ -18,6 +19,7 @@
 	border-radius: $border-radius-md;
 	color: $white;
 	display: inline-block;
+  font-size: $font-size-sm;
   padding: 0.125rem 0.25rem;
 
   &--working {

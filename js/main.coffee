@@ -17,6 +17,8 @@ obj = []
 
 $(document).ready ->
 
+  current = 0
+
   # Hacks
   $.ajax
     url: apiUrl + hacksTable + apiKey
@@ -29,23 +31,38 @@ $(document).ready ->
 
       # For each hack
       $.each obj, ->
-        console.log this.fields.Client
-        console.log this.fields.Code
-        if this.fields.Description != undefined
-          console.log this.fields.Description
-        if this.fields.Link != undefined
-          console.log this.fields.Link
-        console.log this.fields.Contributor
-        console.log this.fields.Date
-        console.log this.fields.Status
 
-        $('.hack__client').text(this.fields.Client)
-        $('.hack__code').text(this.fields.Code)
-        $('.hack__description').text(this.fields.Description)
-        $('.hack__link').text(this.fields.Link)
-        $('.hack__contributor').text(this.fields.Contributor)
-        $('.hack__date').text(this.fields.Date)
-        $('.hack__status').text(this.fields.Status)
+        # console.log this.fields.Client
+        # console.log this.fields.Code
+        # if this.fields.Description != undefined
+        #   console.log this.fields.Description
+        # if this.fields.Link != undefined
+        #   console.log this.fields.Link
+        # console.log this.fields.Contributor
+        # console.log this.fields.Date
+        # console.log this.fields.Status
+
+
+        # Fetch template
+        template = document.getElementById('hack').content
+
+        # Set content
+        $(template).find('.hack__client').text(this.fields.Client)
+        $(template).find('.hack__code').text(this.fields.Code)
+        $(template).find('.hack__description').text(this.fields.Description)
+        
+        if this.fields.Link == undefined
+          $(template).find('.hack__link').text()
+        else
+          $(template).find('.hack__link').text(this.fields.Link)
+        
+        $(template).find('.hack__contributor').text(this.fields.Contributor)
+        $(template).find('.hack__date').text(this.fields.Date)
+        $(template).find('.hack__status').text(this.fields.Status)
+
+        # Add it to the DOM
+        document.querySelector('.hacks').appendChild(document.importNode(template, true))
+
 
 
   # Contributors
