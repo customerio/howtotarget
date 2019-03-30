@@ -3,6 +3,7 @@
   border-radius: $border-radius-lg;
   margin-top: 1.5rem;
   padding: 1.5rem;
+  width: 50%;
 }
 
 .hack__heading {
@@ -39,6 +40,12 @@
 	background: $grey-light;
 	border-radius: $border-radius-md;
 	display: block;
+  font-size: $font-size-sm;
 	padding: 1rem;
 	width: 100%;
+}
+
+.hack__meta {
+  font-size: $font-size-sm;
+  margin-top: 0.75rem;
 }
