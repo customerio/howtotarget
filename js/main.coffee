@@ -31,7 +31,7 @@ $(document).ready ->
 
       # Hacks - Nested so it doesn't execute before the contributors stuff, which is relies on
       $.ajax
-        url: apiUrl + hacksTable + apiKey
+        url: apiUrl + hacksTable + apiKey + '&sortField=Client&sortDirection=asc'
         type: 'GET'
         dataType: 'json'
         success: (result) ->
