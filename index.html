@@ -19,10 +19,8 @@
   <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffc61a"> -->
 
-  <!-- Styles and scripts -->
+  <!-- Styles -->
   <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
 
   <!-- Open Graph -->
   <meta property="og:url" content="https://">
@@ -47,9 +45,6 @@
 		
 	</div>
 
-	<template id="test">
-		<p class="test-paragraph">Testing 1 2</p>
-	</template>
 
 	<template id="hack">
 		<div class="hack">
@@ -60,9 +55,14 @@
 			<pre><code class="hack__code">html is cool</code></pre>
 			<p class="hack__description">No further info provided.</p>
 			<a href="#" class="hack__link">https://</a>
-			<p>Contributed by <span class="hack__contributor">Contributor Name</span> on <time>2000-01-01</time></p>
+			<p class="hack__meta">Contributed by <span class="hack__contributor">Contributor Name</span> <time class="hack__date" datetime="1999-99-99">1999-99-99</time></p>
 		</div>
 	</template>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 

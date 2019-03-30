@@ -5,15 +5,10 @@ clientsTable = 'tblChr8nk7eOaEc2I'
 hacksTable = 'tblQoCy66y3WRFG3i'
 contributorsTable = 'tblxFY7eQBVeB6NEV'
 
-# Http = new XMLHttpRequest()
-# url = apiUrl + contributorsTable + apiKey
-# Http.open("GET", url)
-# Http.send()
-# Http.onreadystatechange = ->
-#   obj = Http.responseText
-#   console.log obj
 
-obj = []
+now = moment()
+console.log now
+
 
 $(document).ready ->
 
@@ -48,6 +43,7 @@ $(document).ready ->
 
         # Set content
         $(template).find('.hack__client').text(this.fields.Client)
+        $(template).find('.hack__status').text(this.fields.Status)
         $(template).find('.hack__code').text(this.fields.Code)
         $(template).find('.hack__description').text(this.fields.Description)
         
@@ -57,8 +53,10 @@ $(document).ready ->
           $(template).find('.hack__link').text(this.fields.Link)
         
         $(template).find('.hack__contributor').text(this.fields.Contributor)
-        $(template).find('.hack__date').text(this.fields.Date)
-        $(template).find('.hack__status').text(this.fields.Status)
+
+        relativeDate = moment(this.fields.Date).fromNow()
+        $(template).find('.hack__date').text(relativeDate)
+        $(template).find('.hack__date').attr('datetime', this.fields.Date)
 
         # Add it to the DOM
         document.querySelector('.hacks').appendChild(document.importNode(template, true))
