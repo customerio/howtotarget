@@ -1,0 +1,22 @@
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing:  antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-feature-settings:  "liga" 1;
+  -moz-font-feature-settings:     "liga" 1;
+  -ms-font-feature-settings:      "liga" 1;
+  -o-font-feature-settings:       "liga" 1;
+  font-feature-settings:          "liga" 1;
+  font-family: $sans-serif;
+  color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    margin-top:    0;
+    margin-bottom: 0;
+}

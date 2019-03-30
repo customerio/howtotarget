@@ -1,0 +1,17 @@
+/* Global variables */
+@import "global-variables/colours";
+@import "global-variables/box-shadow";
+@import "global-variables/transitions";
+
+/* Base styles */
+@import "base-styles/normalize";
+@import "base-styles/base";
+
+/* Typography */
+@import "typography/font-variables";
+@import "typography/global-typography";
+
+/* Sections */
+@import "sections/wrapper";
+@import "sections/main";
+@import "sections/footer";

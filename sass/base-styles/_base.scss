@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+	background: $white;
+  height:     100%;
+  font-size:  16px;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+img {
+  max-width: 100%;
+}
