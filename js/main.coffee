@@ -118,6 +118,8 @@ $(document).ready ->
             # Add it to the DOM
             document.querySelector('.hacks').appendChild(document.importNode(template, true))
 
+
+  # Deprecated hacks toggle
   $('.controls__deprecated').click ->
     deprecatedHack = $('.hack__status--deprecated').closest('.hack')
 
@@ -129,3 +131,13 @@ $(document).ready ->
       deprecatedHack.slideDown()
       $(this).text('Hide Deprecated')
       $(this).removeClass('controls__deprecated--active')
+
+  # Input filter
+  $('.controls__filter').keyup ->
+    valThis = $(this).val().toLowerCase()
+    console.log valThis
+    $('.hack__client').each ->
+      text = $(this).text().toLowerCase()
+      if text.indexOf(valThis) == 0 then $(this).closest('.hack').slideDown() else $(this).closest('.hack').slideUp()
+
+
