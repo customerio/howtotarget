@@ -109,13 +109,10 @@ $(document).ready ->
               $(statusElement).removeClass('hack__status--unknown')
               $(statusElement).removeClass('hack__status--working')
               $(statusElement).addClass('hack__status--deprecated')
-            else if statusText == 'Deprecated'
+            else if statusText == 'Unknown'
               $(statusElement).removeClass('hack__status--working')
               $(statusElement).removeClass('hack__status--deprecated')
               $(statusElement).addClass('hack__status--unknown')
-
-
-
 
 
             # Add it to the DOM
