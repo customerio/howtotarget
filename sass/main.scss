@@ -1,5 +1,6 @@
 /* Global variables */
 @import "global-variables/colours";
+@import "global-variables/border-radius";
 @import "global-variables/box-shadow";
 @import "global-variables/transitions";
 
@@ -12,6 +13,8 @@
 @import "typography/global-typography";
 
 /* Sections */
-@import "sections/wrapper";
 @import "sections/main";
 @import "sections/footer";
+
+/* Components */
+@import "components/hack";

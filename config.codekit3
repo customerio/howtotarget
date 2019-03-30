@@ -99,6 +99,32 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"/sass/components/_hack.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/css/_hack.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/sass/global-variables/_border-radius.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/sass/css/_border-radius.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"/sass/global-variables/_box-shadow.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -173,19 +199,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/sass/css/_main.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/sass/sections/_wrapper.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/sass/css/_wrapper.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

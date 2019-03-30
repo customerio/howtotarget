@@ -1,0 +1,42 @@
+.hack {
+  border: 1px solid $grey-light;
+  border-radius: $border-radius-lg;
+  padding: 2rem;
+}
+
+.hack__heading {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hack__client {
+	font-size: $font-size-lg;
+}
+
+.hack__status {
+	background: $black;
+	border-radius: $border-radius-md;
+	color: $white;
+	display: inline-block;
+  padding: 0.125rem 0.25rem;
+
+  &--working {
+  	background: $status-working;
+  }
+
+  &--deprecated {
+  	background: $status-deprecated;
+  }
+
+  &--unknown {
+  	background: $status-unknown;
+  }
+}
+
+.hack__code {
+	background: $grey-light;
+	border-radius: $border-radius-md;
+	display: block;
+	padding: 1rem;
+	width: 100%;
+}

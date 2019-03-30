@@ -1,3 +1,8 @@
 $white: #fff;
-
+$grey-light: #ddd;
+$grey-medium: #767676;
 $black: #000;
+
+$status-working: green;
+$status-deprecated: red;
+$status-unknown: $grey-medium;
