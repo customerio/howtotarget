@@ -1,4 +1,17 @@
 .footer {
 	color: $grey-medium;
+	font-size: $font-size-xs;
 	margin-top: 1rem;
+
+	a {
+		color: inherit;
+	  font-weight: $font-weight-semibold;
+	  text-decoration: none;
+	  transition: $transition-all-short;
+
+		&:hover {
+			border-bottom: 0.0625rem solid $black;
+		  color: $black;
+		}
+	}
 }
