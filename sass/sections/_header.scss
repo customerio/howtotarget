@@ -1,0 +1,15 @@
+.header {
+	
+}
+
+.header__logo {
+	color: red;
+}
+
+.header__title {
+	font-size: $font-size-lg;
+	display: inline-block;
+	margin-left: 0.125rem;
+	position: relative;
+	top: 0.3125rem;
+}

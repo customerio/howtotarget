@@ -1,7 +1,8 @@
 .controls {
 	background: $grey-light;
 	border-radius: $border-radius-lg;
-	padding: 1rem;
+	margin-top: 1rem;
+	padding: 1rem 1rem 0.5rem;
 }
 
 .controls__heading {
@@ -9,7 +10,7 @@
 	font-weight: $font-weight-semibold;
 }
 
-.controls__label,
+.controls__label:not(:first-of-type),
 .controls__input {
 	display: block;
 	margin-top: 0.5rem;
@@ -31,6 +32,11 @@
 	margin-top: 0.5rem;
 	padding: 0.5rem;
 	padding-left: 0;
+
+	&.disabled {
+		opacity: 0.5;
+		pointer-events: none;
+	}
 
 	input {
 		margin-right: 0.25rem;
