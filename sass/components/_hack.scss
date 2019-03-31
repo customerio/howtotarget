@@ -49,15 +49,18 @@
   pointer-events: none;
 
   &--working {
-  	background: $success;
+    background: $success-light;
+  	color: $success;
   }
 
   &--deprecated {
-  	background: $error;
+  	background: $error-light;
+    color: $error;
   }
 
   &--unknown {
-  	background: $status-unknown;
+  	background: $warning-light;
+    color: $warning;
   }
 }
 
