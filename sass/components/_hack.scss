@@ -138,13 +138,9 @@ pre + .hack__description {
 /* Empty state */
 .hacks__empty {
   display: none;
-  margin: 1.0rem auto 0;
+  margin: 0 auto;
   max-width: 100%;
   width: max-content;
-
-  @media screen and (max-width: 767px) {
-    margin-top: 0;
-  }
 
   img {
     height: 20rem;
