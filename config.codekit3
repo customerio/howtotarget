@@ -17,6 +17,106 @@
 		"oAP": "/.gitattributes",
 		"oF": 0
 		},
+	"/assets/favicon/android-chrome-192x192.png": {
+		"ft": 32768,
+		"iS": 13666,
+		"oA": 0,
+		"oAP": "/assets/favicon/android-chrome-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/favicon/android-chrome-512x512.png": {
+		"ft": 32768,
+		"iS": 42391,
+		"oA": 0,
+		"oAP": "/assets/favicon/android-chrome-512x512.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/favicon/apple-touch-icon.png": {
+		"ft": 32768,
+		"iS": 8660,
+		"oA": 0,
+		"oAP": "/assets/favicon/apple-touch-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/favicon/browserconfig.xml": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/assets/favicon/browserconfig.xml",
+		"oF": 0
+		},
+	"/assets/favicon/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 802,
+		"oA": 0,
+		"oAP": "/assets/favicon/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/favicon/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1502,
+		"oA": 0,
+		"oAP": "/assets/favicon/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/favicon/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/assets/favicon/favicon.ico",
+		"oF": 0
+		},
+	"/assets/favicon/mstile-150x150.png": {
+		"ft": 32768,
+		"iS": 3648,
+		"oA": 0,
+		"oAP": "/assets/favicon/mstile-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/favicon/safari-pinned-tab.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/favicon/safari-pinned-tab.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/favicon/site.webmanifest": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/assets/favicon/site.webmanifest",
+		"oF": 0
+		},
 	"/assets/icons/link.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -26,6 +126,38 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/assets/img/empty.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/empty.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/favicon-src-centred.png": {
+		"ft": 32768,
+		"iS": 23935,
+		"oA": 0,
+		"oAP": "/assets/img/favicon-src-centred.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/assets/img/favicon-src.png": {
+		"ft": 32768,
+		"iS": 30555,
+		"oA": 0,
+		"oAP": "/assets/img/favicon-src.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/assets/img/logo-alt.svg": {
 		"ft": 2097152,
@@ -294,7 +426,7 @@
 	"creationDate": 530890869,
 	"displayValue": "How to Target",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-gavin",
+	"iconImageName": "/assets/favicon/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
 	"lastBuiltDate": 574791168.62693405
 	},
