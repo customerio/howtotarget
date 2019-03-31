@@ -90,3 +90,11 @@
   text-align: center;
   min-width: 1.25rem;
 }
+
+/* Empty state */
+.hacks__empty {
+  display: none;
+  margin: 0 auto;
+  max-width: 100%;
+  width: max-content;
+}

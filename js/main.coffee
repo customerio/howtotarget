@@ -119,6 +119,16 @@ $(document).ready ->
             document.querySelector('.hacks').appendChild(document.importNode(template, true))
 
 
+  # Check for empty state
+  emptyStateChecker = () ->
+    setInterval (->
+      if $('.hack').is(':visible')
+        $('.hacks__empty').hide()
+      else
+        $('.hacks__empty').fadeIn()
+        $('.hacks__empty').css('display', 'flex')
+    ), 250
+
   # Deprecated hacks toggle
   $('.controls__deprecated').click ->
     deprecatedHack = $('.hack__status--deprecated').closest('.hack')
@@ -132,12 +142,14 @@ $(document).ready ->
       $(this).text('Hide Deprecated')
       $(this).removeClass('controls__deprecated--active')
 
+    emptyStateChecker()
+
   # Input filter
-  $('#filter-input').keyup ->
+  $('#filter-input').bind 'keyup change input focus blur', (e) ->
+    emptyStateChecker()
+
     valThis = $(this).val().toLowerCase()
-    console.log valThis
+
     $('.hack__client').each ->
       text = $(this).text().toLowerCase()
       if text.indexOf(valThis) == 0 then $(this).closest('.hack').slideDown() else $(this).closest('.hack').slideUp()
-
-
