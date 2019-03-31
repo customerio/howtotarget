@@ -1,6 +1,6 @@
 .wrapper {
 	display: flex;
-	margin-top: 3rem;
+	width: 50%;
 }
 
 .sidebar {
@@ -8,6 +8,7 @@
 	display: flex;
 	flex-direction: column;
   flex-shrink: 0;
+  font-size: $font-size-sm;
 	margin-right: 2rem;
 	min-width: 15rem;
 	position: sticky;
@@ -15,7 +16,6 @@
 }
 
 .hacks {
-	flex-grow: 1;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;

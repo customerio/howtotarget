@@ -97,6 +97,17 @@ pre + .hack__description {
   color: inherit;
   font-weight: $font-weight-semibold;
   text-decoration: none;
+  transition: $transition-all-short;
+}
+
+.hack__contributor:hover {
+  border-bottom: 0.0625rem solid $black;
+  color: $black;
+
+  & ~ .hack__contributor-submissions {
+    background: $black;
+    color: $white;
+  }
 }
 
 .hack__contributor-submissions {
@@ -112,6 +123,7 @@ pre + .hack__description {
   position: relative;
   text-align: center;
   top: -0.0625rem;
+  transition: $transition-all-short;
 }
 
 /* Empty state */

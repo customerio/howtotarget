@@ -137,17 +137,14 @@ $(document).ready ->
     ), 250
 
   # Deprecated hacks toggle
-  $('.controls__deprecated').click ->
+  $('.controls__deprecated input').click ->
     deprecatedHack = $('.hack__status--deprecated').closest('.hack')
 
-    if $(deprecatedHack).is(':visible')
+    if $(this).is(':checked')
+      console.log 'checked'
       deprecatedHack.slideUp()
-      $(this).text('Show Deprecated')
-      $(this).addClass('controls__deprecated--active')
     else
       deprecatedHack.slideDown()
-      $(this).text('Hide Deprecated')
-      $(this).removeClass('controls__deprecated--active')
 
     emptyStateChecker()
 

@@ -25,16 +25,16 @@
 }
 
 .controls__deprecated {
-	background: $status-working;
-	border: 0;
 	border-radius: $border-radius-md;
-	color: $white;
-	margin-top: 1rem;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 0.5rem;
 	padding: 0.5rem;
-	transition: $transition-all-medium;
-	width: 100%;
+	padding-left: 0;
 
-	&--active {
-		background: $status-deprecated;
+	input {
+		margin-right: 0.25rem;
+		position: relative;
+		top: -0.0625rem;
 	}
 }
