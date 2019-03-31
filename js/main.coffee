@@ -38,7 +38,7 @@ $(document).ready ->
           obj = result.records
 
           # For each hack
-          $.each obj, ->
+          $.each obj, (i) ->
 
             # Fetch template
             template = document.getElementById('hack').content
@@ -55,6 +55,12 @@ $(document).ready ->
             relativeDate = moment(this.fields.Date).fromNow()
             $(template).find('.hack__date').text(relativeDate)
             $(template).find('.hack__date').attr('datetime', this.fields.Date)
+
+
+            # Generate and set anchor link
+            hackId = this.fields.ID.toString()
+            $(template).find('.hack').attr('id', hackId)
+            $(template).find('.hack__anchor').attr('href', '#' + hackId)
 
 
             # Client
@@ -113,6 +119,7 @@ $(document).ready ->
               $(statusElement).removeClass('hack__status--working')
               $(statusElement).removeClass('hack__status--deprecated')
               $(statusElement).addClass('hack__status--unknown')
+
 
 
             # Add it to the DOM
