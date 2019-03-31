@@ -110,20 +110,22 @@ $(document).ready ->
             if statusText == 'Working'
               $(statusElement).removeClass('hack__status--unknown')
               $(statusElement).removeClass('hack__status--deprecated')
+              $(template).find('.hack').removeClass('hack--deprecated')
               $(statusElement).addClass('hack__status--working')
             else if statusText == 'Deprecated'
               $(statusElement).removeClass('hack__status--unknown')
               $(statusElement).removeClass('hack__status--working')
               $(statusElement).addClass('hack__status--deprecated')
+              $(template).find('.hack').addClass('hack--deprecated')
             else if statusText == 'Unknown'
               $(statusElement).removeClass('hack__status--working')
               $(statusElement).removeClass('hack__status--deprecated')
+              $(template).find('.hack').removeClass('hack--deprecated')
               $(statusElement).addClass('hack__status--unknown')
-
-
 
             # Add it to the DOM
             document.querySelector('.hacks').appendChild(document.importNode(template, true))
+              
 
 
   # Check for empty state
@@ -141,10 +143,9 @@ $(document).ready ->
     deprecatedHack = $('.hack__status--deprecated').closest('.hack')
 
     if $(this).is(':checked')
-      console.log 'checked'
-      deprecatedHack.slideUp()
-    else
       deprecatedHack.slideDown()
+    else
+      deprecatedHack.slideUp()
 
     emptyStateChecker()
 
