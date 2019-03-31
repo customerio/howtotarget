@@ -17,6 +17,14 @@
 		"oAP": "/.gitattributes",
 		"oF": 0
 		},
+	"/.htaccess": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 2,
+		"oAP": "/.htaccess",
+		"oF": 0
+		},
 	"/assets/favicon/android-chrome-192x192.png": {
 		"ft": 32768,
 		"iS": 13666,
@@ -178,6 +186,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"/assets/img/meta.png": {
+		"ft": 32768,
+		"iS": 157286,
+		"oA": 0,
+		"oAP": "/assets/img/meta.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/build/.gitignore": {
 		"cB": 0,
