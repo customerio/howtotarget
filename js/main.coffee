@@ -162,4 +162,7 @@ $(document).ready ->
 
     $('.hack__client').each ->
       text = $(this).text().toLowerCase()
-      if text.indexOf(valThis) == 0 then $(this).closest('.hack').slideDown() else $(this).closest('.hack').slideUp()
+      if text.indexOf(valThis) == 0
+        $(this).closest('.hack').not('.hack--deprecated').slideDown()
+      else
+        $(this).closest('.hack').slideUp()
