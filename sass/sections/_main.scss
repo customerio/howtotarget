@@ -17,6 +17,7 @@
   flex-shrink: 0;
   font-size: $font-size-sm;
 	margin-right: 2rem;
+	max-width: 18.5rem;
 	min-width: 15rem;
 	position: sticky;
 	top: 2rem;
@@ -24,6 +25,7 @@
 	@media screen and (max-width: 767px) {
 		margin-bottom: 2rem;
 		position: initial;
+		max-width: 100%;
 		width: 100%;
 	}
 }
