@@ -154,6 +154,11 @@ $(document).ready ->
 
     valThis = $(this).val().toLowerCase()
 
+    if valThis == ''
+      $('.controls__deprecated').removeClass('disabled')
+    else
+      $('.controls__deprecated').addClass('disabled')
+
     $('.hack__client').each ->
       text = $(this).text().toLowerCase()
       if text.indexOf(valThis) == 0 then $(this).closest('.hack').slideDown() else $(this).closest('.hack').slideUp()
