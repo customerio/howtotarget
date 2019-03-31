@@ -3,8 +3,15 @@
 	margin-top: 3rem;
 }
 
-.controls {
-
+.sidebar {
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+  flex-shrink: 0;
+	margin-right: 2rem;
+	min-width: 15rem;
+	position: sticky;
+	top: 2rem;
 }
 
 .hacks {

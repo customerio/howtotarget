@@ -13,16 +13,24 @@
   align-items: center;
 	display: flex;
 	justify-content: flex-start;
-  padding: 1rem 1rem 0;
+  padding: 0.75rem 1rem 0;
 }
 
 .hack__client {
-	font-size: $font-size-lg;
-  font-weight: $font-weight-semibold;
+	font-size: $font-size-md;
+  font-weight: $font-weight-bold;
 }
 
 .hack__anchor {
+  font-size: $font-size-md;
+  margin-left: 0.5rem;
+  opacity: 0;
+  text-decoration: none;
+  transition: $transition-all-medium;
 
+  .hack:hover & {
+    opacity: 0.5;
+  }
 }
 
 .hack__status {
@@ -64,36 +72,46 @@
   font-size: $font-size-sm;
   // Stops #ffff from getting fancied up
   font-variant-ligatures: none;
-  margin-bottom: 1rem;
 	padding: 1rem;
 	width: 100%;
 }
 
+pre + .hack__description {
+  margin-top: 1rem;
+}
+
 .hack__description {
+  font-size: $font-size-sm;
   line-height: 1.5;
 }
 
 .hack__meta {
   background: $grey-light;
   color: $grey-medium;
-  font-size: $font-size-sm;
+  font-size: $font-size-xs;
   padding: 0.5rem 1rem;
 }
 
+.hack__contributor,
+.hack__contributor-name {
+  color: inherit;
+  font-weight: $font-weight-semibold;
+  text-decoration: none;
+}
+
 .hack__contributor-submissions {
-  background: $grey-medium;
+  border: 0.0625rem solid $grey-medium;
   border-radius: $border-radius-pill;
-  color: $white;
   display: inline-block;
-  font-size: $font-size-xs;
+  font-size: 0.5rem;
   font-weight: $font-weight-semibold;
   line-height: 1;
-  margin-left: 0.125rem;
-  margin-right: 0.125rem;
-  padding: 0.125rem 0.25rem;
+  margin-left: 0.1875rem;
+  padding: 0.125rem 0.1875rem;
   pointer-events: none;
+  position: relative;
   text-align: center;
-  min-width: 1.25rem;
+  top: -0.0625rem;
 }
 
 /* Empty state */
