@@ -32,8 +32,12 @@
 
 .hacks {
 	list-style-type: none;
-	margin: 0;
+	margin: 3.0rem 0 0;
 	overflow: hidden;
 	padding: 0;
 	width: 100%;
+
+	@media screen and (max-width: 767px) {
+		margin-top: 0;
+	}
 }
