@@ -2,6 +2,12 @@
 	display: flex;
 	margin: 0 auto;
 	max-width: 800px;
+
+	@media screen and (max-width: 767px) {
+		display: block;
+		max-width: 100%;
+		width: 25rem;
+	}
 }
 
 .sidebar {
@@ -14,6 +20,12 @@
 	min-width: 15rem;
 	position: sticky;
 	top: 2rem;
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: 2rem;
+		position: initial;
+		width: 100%;
+	}
 }
 
 .hacks {
