@@ -51,18 +51,18 @@
   pointer-events: none;
 
   &--working {
-    background: $success-light;
-  	color: $success;
+    background: $success-background;
+  	color: $success-text;
   }
 
   &--deprecated {
-  	background: $error-light;
-    color: $error;
+  	background: $error-background;
+    color: $error-text;
   }
 
   &--unknown {
-  	background: $warning-light;
-    color: $warning;
+  	background: $warning-background;
+    color: $warning-text;
   }
 }
 
