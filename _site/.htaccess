@@ -1,0 +1,30 @@
+# Add caching
+<FilesMatch ".(jpg|jpeg|png|gif|js)$">
+    Header set Cache-Control "max-age=3600"
+</FilesMatch>
+
+# Prevent viewing of htaccess
+<Files .htaccess>
+    order allow,deny
+    deny from all
+</Files>
+
+# Force HTTPS
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://howtotarget.email/$1 [R,L]
+
+# Prevent directory listings
+Options All -Indexes
+
+# Don't require .html extension
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
+# Don't require .php extension
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
