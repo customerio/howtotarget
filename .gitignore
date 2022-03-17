@@ -1,3 +1,4 @@
 #
-vendor
 .jekyll-cache
+_site
+vendor
