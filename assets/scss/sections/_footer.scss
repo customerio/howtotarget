@@ -1,5 +1,5 @@
 .footer {
-	color: $grey-medium;
+	color: $text-color-secondary;
 	font-size: $font-size-xs;
 	margin-top: 1rem;
 
@@ -10,8 +10,8 @@
 	  transition: $transition-all-short;
 
 		&:hover {
-			border-bottom: 0.0625rem solid $black;
-		  color: $black;
+			border-bottom: 0.0625rem solid $text-color-primary;
+		  color: $text-color-primary;
 		}
 	}
 }
