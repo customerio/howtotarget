@@ -1,6 +1,6 @@
 .hack {
-  background: $white;
-  border: 1px solid $grey-light;
+  background: $background-color-primary;
+  border: 1px solid $border-color-light;
   border-radius: $border-radius-lg;
   width: 100%;
 
@@ -41,7 +41,7 @@
 
 .hack__status {
 	border-radius: $border-radius-md;
-	color: $white;
+	color: $background-color-primary;
 	display: inline-block;
   font-size: $font-size-xs;
   font-weight: $font-weight-semibold;
@@ -51,18 +51,18 @@
   pointer-events: none;
 
   &--working {
-    background: $success-light;
-  	color: $success;
+    background: $background-color-success;
+  	color: $text-color-success;
   }
 
   &--deprecated {
-  	background: $error-light;
-    color: $error;
+  	background: $background-color-error;
+    color: $text-color-error;
   }
 
   &--unknown {
-  	background: $warning-light;
-    color: $warning;
+  	background: $background-color-warning;
+    color: $text-color-warning;
   }
 }
 
@@ -70,7 +70,7 @@
   padding: 1rem;
 
   pre {
-    background: $grey-light;
+    background: $background-color-secondary;
     border-radius: $border-radius-md;
     margin: 0;
   }
@@ -94,8 +94,8 @@ pre + .hack__description {
 }
 
 .hack__meta {
-  background: $grey-light;
-  color: $grey-medium;
+  background: $background-color-secondary;
+  color: $text-color-secondary;
   font-size: $font-size-xs;
   padding: 0.5rem 1rem;
 }
@@ -109,18 +109,18 @@ pre + .hack__description {
 }
 
 .hack__contributor:hover {
-  border-bottom: 0.0625rem solid $black;
-  color: $black;
+  border-bottom: 0.0625rem solid $text-color-primary;
+  color: $text-color-primary;
 
   & ~ .hack__contributor-submissions {
-    background: $black;
-    border-color: $black;
-    color: $white;
+    background: $text-color-primary;
+    border-color: $text-color-primary;
+    color: $background-color-primary;
   }
 }
 
 .hack__contributor-submissions {
-  border: 0.0625rem solid $grey-medium;
+  border: 0.0625rem solid $border-color-dark;
   border-radius: $border-radius-pill;
   display: inline-block;
   font-size: 0.5rem;
