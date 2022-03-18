@@ -8,6 +8,12 @@ https://howtotarget.email
 
 ## Contributing email hacks
 
+### Open an issue
+
+// TODO
+
+### Open a pull request
+
 // TODO
 
 ## Contributing to development
