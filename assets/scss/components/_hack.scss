@@ -74,14 +74,22 @@
     border-radius: $border-radius-md;
     margin: 0;
   }
-}
 
-.hack__code {
-	display: block;
-  font-size: $font-size-sm;
-  font-variant-ligatures: none; // Stops #ffff from getting fancied up
-  padding: 1rem;
-	width: 100%;
+  pre > code {
+    display: block;
+    font-size: $font-size-sm;
+    font-variant-ligatures: none; // Stops #ffff from getting fancied up
+    padding: 1rem;
+    width: 100%;
+  }
+
+  p {
+    margin-top: 1rem;
+
+    code {
+      font-size: 0.875em;
+    }
+  }
 }
 
 pre + .hack__description {
