@@ -5,11 +5,11 @@ let emptyState = document.getElementById("empty-state");
 function liveSearch() {
   let search_query = document.getElementById("filter-input").value;
 
-  //Use innerText if all contents are visible
-  //Use textContent for including hidden elements
   for (var i = 0; i < hacks.length; i++) {
+    let hackHeading = hacks[i].querySelector(".hack__heading");
+
     if (
-      hacks[i].textContent.toLowerCase().includes(search_query.toLowerCase())
+      hackHeading.textContent.toLowerCase().includes(search_query.toLowerCase())
     ) {
       hacks[i].classList.remove("hidden");
     } else {
