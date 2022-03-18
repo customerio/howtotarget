@@ -4,10 +4,6 @@
   border-radius: $border-radius-lg;
   width: 100%;
 
-  & + .hack {
-    margin-top: 1.5rem;
-  }
-
   &--deprecated {
     display: none;
   }

@@ -1,12 +1,11 @@
 .wrapper {
 	display: flex;
 	margin: 0 auto;
-	max-width: 800px;
+	max-width: 65rem;
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 55rem) {
 		display: block;
-		max-width: 100%;
-		width: 25rem;
+		max-width: calc(min(30rem, 100%));
 	}
 }
 
@@ -17,12 +16,11 @@
   flex-shrink: 0;
   font-size: $font-size-sm;
 	margin-right: 2rem;
-	max-width: 18.5rem;
-	min-width: 15rem;
+	max-width: 19rem;
 	position: sticky;
 	top: 2rem;
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 55rem) {
 		margin-bottom: 2rem;
 		position: initial;
 		max-width: 100%;
@@ -31,13 +29,16 @@
 }
 
 .hacks {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
 	list-style-type: none;
 	margin: 3.0rem 0 0;
 	overflow: hidden;
 	padding: 0;
 	width: 100%;
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 55rem) {
 		margin-top: 0;
 	}
 }
