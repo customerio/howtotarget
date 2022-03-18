@@ -1,19 +1,23 @@
-<template id="hack">
-  <li class="hack" id="">
-    <div class="hack__heading">
-      <h2 class="hack__client">Client Name</h2>
-      <!-- <a href="" class="hack__anchor"><img src="assets/icons/link.svg" alt=""></a> -->
-      <span class="hack__status">Status</span>
-    </div>
-    <div class="hack__main">
-      <pre><code class="hack__code">html is cool</code></pre>
-      <p class="hack__description"></p>
-      <!-- <a href="#" class="hack__link">Remove Me</a> -->
-    </div>
+<li class="hack" id="{{ hack.title }}">
+  <div class="hack__heading">
+    <h2 class="hack__client">
+      {{ hack.client }} {{ hack.version }}
+      {% if hack.platform %}
+      ({{ hack.platform }})
+      {% endif %}
+    </h2>
+    <!-- <a href="" class="hack__anchor"><img src="assets/icons/link.svg" alt=""></a> -->
+    <span class="hack__status hack__status--{{ hack.status | downcase }}">{{ hack.status }}</span>
+  </div>
+  <div class="hack__main">
+    {{ hack.content }}
     <p class="hack__meta">
-      Contributed <time class="hack__date" datetime="1999-99-99">1999-99-99</time> by <a
-        class="hack__contributor" href="" target="_blank">Contributor Name</a><span
-        class="hack__contributor-name"></span><span class="hack__contributor-submissions"></span>
+      Contributed
+      <time class="hack__date" datetime="{{ hack.date }}" title="{{ hack.date | date_to_long_string }}">{{ hack.date |
+        timeago }}</time>
+      by
+      <span class="hack__contributor">{{ hack.contributor }}</span>
+      <!-- <span class="hack__contributor-submissions"></span> -->
     </p>
-  </li>
-</template>
+  </div>
+</li>
