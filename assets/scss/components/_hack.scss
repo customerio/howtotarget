@@ -112,16 +112,16 @@ pre + .hack__description {
   transition: $transition-all-short;
 }
 
-.hack__contributor:hover {
-  border-bottom: 0.0625rem solid $text-color-primary;
-  color: $text-color-primary;
+// .hack__contributor:hover {
+//   border-bottom: 0.0625rem solid $text-color-primary;
+//   color: $text-color-primary;
 
-  & ~ .hack__contributor-submissions {
-    background: $text-color-primary;
-    border-color: $text-color-primary;
-    color: $background-color-primary;
-  }
-}
+//   & ~ .hack__contributor-submissions {
+//     background: $text-color-primary;
+//     border-color: $text-color-primary;
+//     color: $background-color-primary;
+//   }
+// }
 
 .hack__contributor-submissions {
   border: 0.0625rem solid $border-color-dark;
