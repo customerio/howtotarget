@@ -42,3 +42,16 @@
 		margin-top: 0;
 	}
 }
+
+.help-cta {
+	background-color: $background-color-secondary;
+	border-radius: $border-radius-md;
+	font-size: $font-size-sm;
+	line-height: 1.5;
+	padding: 2rem;
+	text-align: center;
+
+	a {
+		color: #0e8c4d;
+	}
+}

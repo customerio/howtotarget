@@ -96,13 +96,15 @@
       padding: 2px 4px;
     }
   }
-}
 
-.hack__meta {
-  background: $background-color-secondary;
-  color: $text-color-secondary;
-  font-size: $font-size-xs;
-  padding: 0.5rem 1rem;
+  p + p {
+    margin-top: 0.5rem;
+  }
+
+  .hack__meta {
+    color: $text-color-secondary;
+    font-size: $font-size-xs;
+  }
 }
 
 .hack__contributor,
@@ -138,15 +140,4 @@
   text-align: center;
   top: -0.0625rem;
   transition: $transition-all-short;
-}
-
-/* Empty state */
-.hacks__empty {
-  margin: 0 auto;
-  max-width: 100%;
-  width: max-content;
-
-  img {
-    height: 20rem;
-  }
 }
