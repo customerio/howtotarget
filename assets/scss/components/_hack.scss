@@ -9,6 +9,10 @@
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .hack__heading {
   align-items: baseline;
 	display: flex;
@@ -138,7 +142,6 @@
 
 /* Empty state */
 .hacks__empty {
-  display: none;
   margin: 0 auto;
   max-width: 100%;
   width: max-content;

@@ -1,20 +1,23 @@
-const input = document.querySelector("input");
-const notFound = document.getElementById("empty-state");
+let searchInput = document.getElementById("filter-input");
+let hacks = document.querySelectorAll(".hack");
+let emptyState = document.getElementById("empty-state");
 
-const filterFunction = () => {
-  const cards = document.querySelectorAll(".hack");
-  cards.forEach((item) => {
-    let whatToSearch = item.querySelector(".hack__client");
+function liveSearch() {
+  let search_query = document.getElementById("filter-input").value;
+
+  //Use innerText if all contents are visible
+  //Use textContent for including hidden elements
+  for (var i = 0; i < hacks.length; i++) {
     if (
-      whatToSearch.innerHTML.toUpperCase().indexOf(input.value.toUpperCase()) >
-      -1
+      hacks[i].textContent.toLowerCase().includes(search_query.toLowerCase())
     ) {
-      item.style.display = "";
-      notFound.style.display = "none";
+      hacks[i].classList.remove("hidden");
     } else {
-      item.style.display = "none";
-      notFound.style.display = "block";
+      hacks[i].classList.add("hidden");
     }
-  });
-};
-input.addEventListener("keyup", filterFunction);
+  }
+}
+
+searchInput.addEventListener("keyup", () => {
+  liveSearch();
+});
