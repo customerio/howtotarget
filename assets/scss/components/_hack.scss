@@ -75,26 +75,23 @@
     display: block;
     font-size: $font-size-sm;
     font-variant-ligatures: none; // Stops #ffff from getting fancied up
+    line-height: 1.5;
     padding: 1rem;
     width: 100%;
   }
 
   p {
+    font-size: $font-size-sm;
+    line-height: 1.5;
     margin-top: 1rem;
 
     code {
+      background-color: $background-color-secondary;
+      border-radius: $border-radius-sm;
       font-size: 0.875em;
+      padding: 2px 4px;
     }
   }
-}
-
-pre + .hack__description {
-  margin-top: 1rem;
-}
-
-.hack__description {
-  font-size: $font-size-sm;
-  line-height: 1.5;
 }
 
 .hack__meta {

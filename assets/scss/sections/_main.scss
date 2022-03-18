@@ -1,5 +1,6 @@
 .wrapper {
 	display: flex;
+	gap: 2rem;
 	margin: 0 auto;
 	max-width: 65rem;
 
@@ -15,7 +16,6 @@
 	flex-direction: column;
   flex-shrink: 0;
   font-size: $font-size-sm;
-	margin-right: 2rem;
 	max-width: 19rem;
 	position: sticky;
 	top: 2rem;
