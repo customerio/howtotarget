@@ -11,7 +11,7 @@
 	  transition: $transition-all-short;
 
 		&:hover {
-			border-bottom: 0.0625rem solid $text-color-primary;
+			border-bottom-color: $text-color-primary;
 		  color: $text-color-primary;
 		}
 	}

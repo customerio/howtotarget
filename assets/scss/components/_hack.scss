@@ -4,13 +4,13 @@
   border-radius: $border-radius-lg;
   width: 100%;
 
-  & + .hack {
-    margin-top: 1.5rem;
-  }
-
   &--deprecated {
     display: none;
   }
+}
+
+.hidden {
+  display: none;
 }
 
 .hack__heading {
@@ -74,30 +74,37 @@
     border-radius: $border-radius-md;
     margin: 0;
   }
-}
 
-.hack__code {
-	display: block;
-  font-size: $font-size-sm;
-  font-variant-ligatures: none; // Stops #ffff from getting fancied up
-  padding: 1rem;
-	width: 100%;
-}
+  pre > code {
+    display: block;
+    font-size: $font-size-sm;
+    font-variant-ligatures: none; // Stops #ffff from getting fancied up
+    line-height: 1.5;
+    padding: 1rem;
+    width: 100%;
+  }
 
-pre + .hack__description {
-  margin-top: 1rem;
-}
+  p {
+    font-size: $font-size-sm;
+    line-height: 1.5;
+    margin-top: 1rem;
 
-.hack__description {
-  font-size: $font-size-sm;
-  line-height: 1.5;
-}
+    code {
+      background-color: $background-color-secondary;
+      border-radius: $border-radius-sm;
+      font-size: 0.875em;
+      padding: 2px 4px;
+    }
+  }
 
-.hack__meta {
-  background: $background-color-secondary;
-  color: $text-color-secondary;
-  font-size: $font-size-xs;
-  padding: 0.5rem 1rem;
+  p + p {
+    margin-top: 0.5rem;
+  }
+
+  .hack__meta {
+    color: $text-color-secondary;
+    font-size: $font-size-xs;
+  }
 }
 
 .hack__contributor,
@@ -108,16 +115,16 @@ pre + .hack__description {
   transition: $transition-all-short;
 }
 
-.hack__contributor:hover {
-  border-bottom: 0.0625rem solid $text-color-primary;
-  color: $text-color-primary;
+// .hack__contributor:hover {
+//   border-bottom: 0.0625rem solid $text-color-primary;
+//   color: $text-color-primary;
 
-  & ~ .hack__contributor-submissions {
-    background: $text-color-primary;
-    border-color: $text-color-primary;
-    color: $background-color-primary;
-  }
-}
+//   & ~ .hack__contributor-submissions {
+//     background: $text-color-primary;
+//     border-color: $text-color-primary;
+//     color: $background-color-primary;
+//   }
+// }
 
 .hack__contributor-submissions {
   border: 0.0625rem solid $border-color-dark;
@@ -133,16 +140,4 @@ pre + .hack__description {
   text-align: center;
   top: -0.0625rem;
   transition: $transition-all-short;
-}
-
-/* Empty state */
-.hacks__empty {
-  display: none;
-  margin: 0 auto;
-  max-width: 100%;
-  width: max-content;
-
-  img {
-    height: 20rem;
-  }
 }

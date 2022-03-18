@@ -2,3 +2,4 @@
 .jekyll-cache
 _site
 vendor
+.DS_Store

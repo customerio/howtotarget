@@ -11,11 +11,39 @@
     </div>
 
     <ul class="hacks">
-      {% include components/empty-state.html %}
+      {% assign hacks = site.posts | sort: "title" %}
+      {% for hack in hacks %}
+        <li class="hack" id="{{ hack.title }}">
+          <div class="hack__heading">
+            <h2 class="hack__client">
+              {{ hack.client }} {{ hack.version }}
+              {% if hack.platform %}
+                ({{ hack.platform }})
+              {% endif %}
+            </h2>
+            <!-- <a href="" class="hack__anchor"><img src="assets/icons/link.svg" alt=""></a> -->
+            <span class="hack__status hack__status--{{ hack.status | downcase }}">{{ hack.status }}</span>
+          </div>
+          <div class="hack__main">
+            {{ hack.content }}
+            <p class="hack__meta">
+              Contributed
+              <time class="hack__date" datetime="{{ hack.date }}" title="{{ hack.date | date_to_long_string }}">{{ hack.date |
+                timeago }}</time>
+              by
+              <span class="hack__contributor">{{ hack.contributor }}</span>
+              <!-- <span class="hack__contributor-submissions"></span> -->
+            </p>
+          </div>
+        </li>
+      {% endfor %}
+      <div class="help-cta">
+        <p>Need help? Can't find what you’re looking for?</p>
+        <p><a href="https://github.com/dylanatsmith/howtotarget/discussions">Start a discussion</a> on the GitHub repo or ask the #email-code channel on <a href="https://email.geeks.chat">Email Geeks Slack</a>.</p>
+      </div>
     </ul>
   </div>
 
-  {% include components/hack.html %}
-  {% include scripts.html %}
+  <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
