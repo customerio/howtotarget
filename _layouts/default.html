@@ -11,18 +11,14 @@
     </div>
 
     <ul class="hacks">
-      {% for hack in site.posts %}
+      {% assign hacks = site.posts | sort: "title" %}
+      {% for hack in hacks %}
         <li class="hack" id="{{ hack.title }}">
           <div class="hack__heading">
             <h2 class="hack__client">
-              {{ hack.client }}
-
-              {% if hack.platform and hack.version %}
-                ({{ hack.platform }} {{ hack.version }})
-              {% elsif hack.platform %}
+              {{ hack.client }} {{ hack.version }}
+              {% if hack.platform %}
                 ({{ hack.platform }})
-              {% elsif hack.version %}
-                ({{ hack.version }})
               {% endif %}
             </h2>
             <!-- <a href="" class="hack__anchor"><img src="assets/icons/link.svg" alt=""></a> -->
@@ -33,7 +29,7 @@
           </div>
           <p class="hack__meta">
             Contributed
-            <time class="hack__date" datetime="{{ hack.date }}">{{ hack.date | timeago }}</time>
+            <time class="hack__date" datetime="{{ hack.date }}" title="{{ hack.date | date_to_long_string }}">{{ hack.date | timeago }}</time>
             by
             <span class="hack__contributor">{{ hack.contributor }}</span>
             <!-- <span class="hack__contributor-submissions"></span> -->
