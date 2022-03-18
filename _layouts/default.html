@@ -16,8 +16,13 @@
           <div class="hack__heading">
             <h2 class="hack__client">
               {{ hack.client }}
-              {% if hack.version %}
+
+              {% if hack.platform and hack.version %}
                 ({{ hack.platform }} {{ hack.version }})
+              {% elsif hack.platform %}
+                ({{ hack.platform }})
+              {% elsif hack.version %}
+                ({{ hack.version }})
               {% endif %}
             </h2>
             <!-- <a href="" class="hack__anchor"><img src="assets/icons/link.svg" alt=""></a> -->
@@ -28,7 +33,7 @@
           </div>
           <p class="hack__meta">
             Contributed
-            <time class="hack__date" datetime="{{ hack.date }}">{{ hack.date }}</time>
+            <time class="hack__date" datetime="{{ hack.date }}">{{ hack.date | timeago }}</time>
             by
             <span class="hack__contributor">{{ hack.contributor }}</span>
             <!-- <span class="hack__contributor-submissions"></span> -->
