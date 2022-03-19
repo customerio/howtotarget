@@ -1,6 +1,21 @@
 .about {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
 	gap: var(--spacing-sm);
 	line-height: var(--line-height-lg);
+}
+
+.about__link {
+	align-items: center;
+	display: flex;
+	gap: var(--spacing-xs);
+	text-decoration: none;
+
+	svg {
+		height: 1rem;
+	}
+
+	span {
+		text-decoration: underline;
+	}
 }
