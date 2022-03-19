@@ -1,24 +1,25 @@
 ---
 ---
 
-/* Global variables */
-@import "global-variables/colours";
-@import "global-variables/border-radius";
-@import "global-variables/transitions";
+/* Design tokens */
+@import "design-tokens/color";
+@import "design-tokens/border-radius";
+@import "design-tokens/font-family";
+@import "design-tokens/font-size";
+@import "design-tokens/font-weight";
+@import "design-tokens/spacing";
+@import "design-tokens/transition";
 
 /* Base styles */
-@import "base-styles/normalize";
-@import "base-styles/base";
-
-/* Typography */
-@import "typography/font-variables";
-@import "typography/global-typography";
-
-/* Sections */
-@import "sections/header";
-@import "sections/controls";
-@import "sections/main";
-@import "sections/footer";
+@import "base/normalize";
+@import "base/base";
+@import "base/layout";
+@import "base/typography";
 
 /* Components */
+@import "components/controls";
+@import "components/footer";
 @import "components/hack";
+@import "components/header";
+@import "components/help-cta";
+@import "components/support";

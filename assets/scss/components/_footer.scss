@@ -1,0 +1,18 @@
+.footer {
+	// color: $text-color-secondary;
+	line-height: 1.5;
+	margin-top: 1rem;
+
+	a:not([class]) {
+		border-bottom: 0.0625rem solid $text-color-secondary;
+		color: inherit;
+	  font-weight: $font-weight-semibold;
+	  text-decoration: none;
+	  transition: $transition-all-short;
+
+		&:hover {
+			border-bottom-color: $text-color-primary;
+		  color: $text-color-primary;
+		}
+	}
+}

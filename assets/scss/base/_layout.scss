@@ -31,27 +31,14 @@
 .hacks {
 	display: flex;
 	flex-direction: column;
-	gap: 1.5rem;
+	gap: 1rem;
 	list-style-type: none;
-	margin: 3.0rem 0 0;
+	margin: 3rem 0 0;
 	overflow: hidden;
 	padding: 0;
 	width: 100%;
 
 	@media screen and (max-width: 55rem) {
 		margin-top: 0;
-	}
-}
-
-.help-cta {
-	background-color: $background-color-secondary;
-	border-radius: $border-radius-lg;
-	font-size: $font-size-sm;
-	line-height: 1.5;
-	padding: 2rem;
-	text-align: center;
-
-	a {
-		color: #0e8c4d;
 	}
 }
