@@ -1,4 +1,5 @@
 {% assign anchor = hack.date | date: "%Y-%m-%d"| append: "-" | append: hack.slug %}
+{% assign contributor = site.data.contributors[hack.contributor] %}
 
 <article class="hack" id="{{ anchor }}">
   <div class="hack__heading">
@@ -16,14 +17,18 @@
 
   <div class="hack__main">
     {% include components/copy-button.html %}
+
     {{ hack.content }}
 
     <p class="hack__meta">
       Contributed
-      <time class="hack__date" datetime="{{ hack.date }}" title="{{ hack.date | date_to_long_string }}">{{ hack.date |
-        timeago }}</time>
+      <time class="hack__date" datetime="{{ hack.date }}" title="{{ hack.date | date_to_long_string }}">
+        {{ hack.date | timeago }}
+      </time>
       by
-      <span class="hack__contributor">{{ hack.contributor }}</span>
+      <a href="{{ contributor.twitter_url }}" class="hack__contributor">
+        {{ contributor.name }}
+      </a>
     </p>
   </div>
 </article>
