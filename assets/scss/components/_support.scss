@@ -11,7 +11,7 @@
 	transition: $transition-all-short;
 
 	&:hover {
-		background-color: $background-color-secondary;
+		background-color: var(--color-bg-secondary);
 	}
 }
 
