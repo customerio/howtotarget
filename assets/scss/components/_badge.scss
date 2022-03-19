@@ -1,8 +1,8 @@
 .badge {
-	border-radius: $border-radius-md;
+	border-radius: var(--border-radius-md);
 	display: inline-block;
-  font-size: $font-size-xs;
-  font-weight: $font-weight-semibold;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-sm);
   margin-left: auto;
   padding: 0.1875rem 0.375rem;

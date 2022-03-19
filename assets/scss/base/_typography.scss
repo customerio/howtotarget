@@ -2,13 +2,13 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing:  antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: $sans-serif;
+  font-family: var(--font-family-sans-serif);
 }
 
 a {
   color: inherit;
-  font-weight: $font-weight-semibold;
-  transition: $transition-all-short;
+  font-weight: var(--font-weight-semibold);
+  transition: var(--transition-all-short);
 
   &:hover {
     color: var(--color-fg-accent);

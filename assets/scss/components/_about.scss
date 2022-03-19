@@ -1,3 +1,6 @@
 .about {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-sm);
 	line-height: var(--line-height-lg);
 }

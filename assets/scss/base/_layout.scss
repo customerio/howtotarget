@@ -5,7 +5,8 @@
 	max-width: 65rem;
 
 	@media screen and (max-width: 55rem) {
-		display: block;
+		flex-direction: column;
+		gap: var(--spacing-xl);
 		max-width: calc(min(30rem, 100%));
 	}
 }
@@ -15,14 +16,13 @@
 	display: flex;
 	flex-direction: column;
   flex-shrink: 0;
-  font-size: $font-size-sm;
+  font-size: var(--font-size-sm);
 	gap: var(--spacing-md);
 	max-width: 19rem;
 	position: sticky;
 	top: var(--spacing-lg);
 
 	@media screen and (max-width: 55rem) {
-		margin-bottom: var(--spacing-lg);
 		position: initial;
 		max-width: 100%;
 		width: 100%;
@@ -34,11 +34,6 @@
 	flex-direction: column;
 	gap: var(--spacing-md);
 	list-style-type: none;
-	margin: var(--spacing-xl) 0 0;
 	overflow: hidden;
 	padding: 0;
-
-	@media screen and (max-width: 55rem) {
-		margin-top: 0;
-	}
 }

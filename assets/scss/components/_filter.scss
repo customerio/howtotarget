@@ -1,0 +1,29 @@
+.controls {
+	background-color: var(--color-bg-secondary);
+	border-radius: var(--border-radius-lg);
+	padding: var(--spacing-md);
+}
+
+.controls__heading {
+	font-size: var(--font-size-lg);
+	font-weight: var(--font-weight-semibold);
+}
+
+.controls__label:not(:first-of-type),
+.controls__input {
+	display: block;
+	margin-top: var(--spacing-sm);
+	width: 100%;
+}
+
+.controls__input {
+	appearance: none;
+	background-color: var(--color-bg-primary);
+	border: none;
+	border-radius: var(--border-radius-md);
+	padding: var(--spacing-sm);
+
+	&::placeholder {
+		color: var(--color-fg-secondary);
+	}
+}

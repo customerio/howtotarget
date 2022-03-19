@@ -1,6 +1,6 @@
 .hack {
   border: 1px solid var(--color-border);
-  border-radius: $border-radius-lg;
+  border-radius: var(--border-radius-lg);
   padding: var(--spacing-md);
 }
 
@@ -11,8 +11,8 @@
 }
 
 .hack__client {
-	font-size: $font-size-md;
-  font-weight: $font-weight-bold;
+	font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
 }
 
 .hack__main {
@@ -20,13 +20,13 @@
 
   pre {
     background-color: var(--color-bg-secondary);
-    border-radius: $border-radius-md;
+    border-radius: var(--border-radius-md);
     margin: 0;
   }
 
   pre > code {
     display: block;
-    font-size: $font-size-sm;
+    font-size: var(--font-size-sm);
     font-variant-ligatures: none; // Stops #ffff from getting fancied up
     line-height: var(--line-height-lg);
     padding: var(--spacing-md);
@@ -34,14 +34,14 @@
   }
 
   p {
-    font-size: $font-size-sm;
+    font-size: var(--font-size-sm);
     line-height: var(--line-height-lg);
     margin-top: var(--spacing-md);
 
     code {
       background-color: var(--color-bg-secondary);
-      border-radius: $border-radius-sm;
-      font-size: $font-size-xs;
+      border-radius: var(--border-radius-sm);
+      font-size: var(--font-size-xs);
       padding: 2px 4px;
     }
   }
@@ -52,14 +52,14 @@
 
   .hack__meta {
     color: var(--color-fg-secondary);
-    font-size: $font-size-xs;
+    font-size: var(--font-size-xs);
   }
 }
 
 .hack__contributor,
 .hack__contributor-name {
   color: inherit;
-  font-weight: $font-weight-semibold;
+  font-weight: var(--font-weight-semibold);
   text-decoration: none;
-  transition: $transition-all-short;
+  transition: var(--transition-all-short);
 }
