@@ -1,13 +1,3 @@
 .about {
 	line-height: var(--line-height-lg);
-
-	a:not([class]) {
-		color: inherit;
-	  font-weight: $font-weight-semibold;
-	  transition: $transition-all-short;
-
-		&:hover {
-		  color: var(--color-fg-accent);
-		}
-	}
 }

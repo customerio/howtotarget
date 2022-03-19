@@ -1,9 +1,10 @@
 .support {
+	align-items: flex-start;
 	border: 1px solid var(--color-border);
 	border-radius: $border-radius-lg;
 	color: var(--color-fg-primary);
 	display: flex;
-	align-items: flex-start;
+	font-weight: $font-weight-normal;
 	gap: var(--spacing-md);
 	line-height: var(--line-height-lg);
 	padding: var(--spacing-md);

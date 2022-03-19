@@ -4,3 +4,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-family: $sans-serif;
 }
+
+a {
+  color: inherit;
+  font-weight: $font-weight-semibold;
+  transition: $transition-all-short;
+
+  &:hover {
+    color: var(--color-fg-accent);
+  }
+}
