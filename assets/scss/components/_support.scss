@@ -1,7 +1,7 @@
 .support {
 	border: 1px solid var(--color-border);
 	border-radius: $border-radius-lg;
-	color: $text-color-primary;
+	color: var(--color-fg-primary);
 	display: flex;
 	align-items: flex-start;
 	gap: var(--spacing-md);
@@ -12,6 +12,11 @@
 
 	&:hover {
 		background-color: var(--color-bg-secondary);
+		color: var(--color-fg-primary);
+
+		p {
+			color: var(--color-fg-primary);
+		}
 	}
 }
 
@@ -30,6 +35,6 @@
 	}
 
 	p {
-		color: $text-color-secondary;
+		color: var(--color-fg-secondary);
 	}
 }

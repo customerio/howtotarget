@@ -8,15 +8,16 @@
 
 html {
   accent-color: var(--color-fg-accent);
-	background: var(--color-bg-primary);
+	background-color: var(--color-bg-primary);
+  color: var(--color-fg-primary);
   height:     100%;
   font-size:  16px;
 }
 
 body {
   margin: 0;
-  width: 100%;
   padding: var(--spacing-lg);
+  width: 100%;
 
   @media only screen and (max-width: 55rem) {
   	padding: var(--spacing-lg) var(--spacing-md);

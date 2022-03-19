@@ -51,7 +51,7 @@
   }
 
   .hack__meta {
-    color: $text-color-secondary;
+    color: var(--color-fg-secondary);
     font-size: $font-size-xs;
   }
 }
