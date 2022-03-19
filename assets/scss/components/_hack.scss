@@ -17,6 +17,8 @@
 
 .hack__main {
   margin-top: var(--spacing-md);
+  // Needed for positioning copy button
+  position: relative;
 
   pre {
     background-color: var(--color-bg-secondary);

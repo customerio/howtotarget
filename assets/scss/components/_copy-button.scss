@@ -1,0 +1,28 @@
+.copy-button {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid var(--color-fg-secondary);
+  border-radius: var(--border-radius-md);
+  color: var(--color-fg-secondary);
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  padding: 4px 8px;
+  position: absolute;
+  right: 13px;
+  top: 13px;
+
+  &::before {
+    content: "Copy";
+  }
+
+  // This class will be toggled via JavaScript
+  &.copied {
+    &::before {
+      content: "Copied!";
+    }
+
+    &::after {
+      content: "✔️";
+    }
+  }
+}
