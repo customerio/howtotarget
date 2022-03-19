@@ -16,3 +16,22 @@
 
   --color-border: #F0F3F4;
 }
+
+@media (prefers-color-scheme: dark) {
+  --color-brand: #0E8B4C;
+
+  --color-fg-primary: #2E3538;
+  --color-fg-secondary: #606F76;
+  --color-fg-accent: #0C7942;
+  --color-fg-success: #0C7942;
+  --color-fg-warning: #A5610E;
+  --color-fg-danger: #C33022;
+
+  --color-bg-primary: #fff;
+  --color-bg-secondary: #F0F3F4;
+  --color-bg-success: #E1F1E9;
+  --color-bg-warning: #FDF6EC;
+  --color-bg-danger: #FFECEA;
+
+  --color-border: #F0F3F4;
+}
