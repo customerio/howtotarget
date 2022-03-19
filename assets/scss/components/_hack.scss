@@ -12,7 +12,7 @@
 
 .hack__client {
 	font-size: var(--font-size-md);
-  font-weight: $font-weight-bold;
+  font-weight: var(--font-weight-bold);
 }
 
 .hack__main {
@@ -59,7 +59,7 @@
 .hack__contributor,
 .hack__contributor-name {
   color: inherit;
-  font-weight: $font-weight-semibold;
+  font-weight: var(--font-weight-semibold);
   text-decoration: none;
-  transition: $transition-all-short;
+  transition: var(--transition-all-short);
 }

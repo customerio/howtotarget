@@ -4,12 +4,12 @@
 	border-radius: $border-radius-lg;
 	color: var(--color-fg-primary);
 	display: flex;
-	font-weight: $font-weight-normal;
+	font-weight: var(--font-weight-normal);
 	gap: var(--spacing-md);
 	line-height: var(--line-height-lg);
 	padding: var(--spacing-md);
 	text-decoration: none;
-	transition: $transition-all-short;
+	transition: var(--transition-all-short);
 
 	&:hover {
 		background-color: var(--color-bg-secondary);
@@ -32,7 +32,7 @@
 	gap: var(--spacing-xs);
 
 	span {
-		font-weight: $font-weight-bold;
+		font-weight: var(--font-weight-bold);
 	}
 
 	p {

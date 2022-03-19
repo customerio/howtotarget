@@ -1,3 +1,5 @@
-$transition-all-short:  all 0.1s ease;
-$transition-all-medium: all 0.3s ease;
-$transition-all-long:   all 0.5s ease;
+:root {
+  --transition-all-short: all 0.1s ease-in-out;
+  --transition-all-medium: all 0.3s ease-in-out;
+  --transition-all-long: all 0.5s ease-in-out;
+}

@@ -6,7 +6,7 @@
 
 .controls__heading {
 	font-size: var(--font-size-lg);
-	font-weight: $font-weight-semibold;
+	font-weight: var(--font-weight-semibold);
 }
 
 .controls__label:not(:first-of-type),
