@@ -1,6 +1,8 @@
 // Based on 16px x 1.25 and rounded to nearest pixel
-$font-size-xs:   0.750rem; /* 12px */
-$font-size-sm:   0.875rem; /* 14px */
-$font-size-md:   1.000rem; /* 16px */
-$font-size-lg:   1.250rem; /* 20px */
-$font-size-xl:   1.500rem; /* 24px */
+:root {
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+}

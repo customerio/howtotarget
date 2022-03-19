@@ -1,7 +1,7 @@
 .help-cta {
 	background-color: var(--color-bg-secondary);
 	border-radius: $border-radius-lg;
-	font-size: $font-size-sm;
+	font-size: var(--font-size-sm);
 	line-height: var(--line-height-lg);
 	padding: var(--spacing-lg);
 	text-align: center;

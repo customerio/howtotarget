@@ -15,7 +15,7 @@
 	display: flex;
 	flex-direction: column;
   flex-shrink: 0;
-  font-size: $font-size-sm;
+  font-size: var(--font-size-sm);
 	gap: var(--spacing-md);
 	max-width: 19rem;
 	position: sticky;
