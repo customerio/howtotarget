@@ -15,6 +15,16 @@
   font-weight: var(--font-weight-bold);
 }
 
+.hack__anchor {
+  color: var(--color-fg-secondary);
+  margin-left: var(--spacing-sm);
+  opacity: 0;
+
+  .hack:hover & {
+    opacity: 1;
+  }
+}
+
 .hack__main {
   margin-top: var(--spacing-md);
   // Needed for positioning copy button
