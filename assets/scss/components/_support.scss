@@ -1,0 +1,35 @@
+.support {
+	border: 1px solid $border-color-light;
+	border-radius: $border-radius-lg;
+	color: $text-color-primary;
+	display: flex;
+	align-items: flex-start;
+	gap: var(--spacing-md);
+	line-height: var(--line-height-lg);
+	padding: var(--spacing-md);
+	text-decoration: none;
+	transition: $transition-all-short;
+
+	&:hover {
+		background-color: $background-color-secondary;
+	}
+}
+
+.support__logo {
+	flex-shrink: 0;
+	width: 2rem;
+}
+
+.support__text {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing-xs);
+
+	span {
+		font-weight: $font-weight-bold;
+	}
+
+	p {
+		color: $text-color-secondary;
+	}
+}

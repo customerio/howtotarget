@@ -2,22 +2,13 @@
   background: $background-color-primary;
   border: 1px solid $border-color-light;
   border-radius: $border-radius-lg;
-  width: 100%;
-
-  &--deprecated {
-    display: none;
-  }
-}
-
-.hidden {
-  display: none;
+  padding: var(--spacing-md);
 }
 
 .hack__heading {
   align-items: baseline;
 	display: flex;
 	justify-content: flex-start;
-  padding: 0.75rem 1rem 0;
 }
 
 .hack__client {
@@ -25,49 +16,8 @@
   font-weight: $font-weight-bold;
 }
 
-.hack__anchor {
-  font-size: $font-size-md;
-  margin-left: 0.5rem;
-  opacity: 0;
-  position: relative;
-  text-decoration: none;
-  top: -0.125rem;
-  transition: $transition-all-medium;
-
-  .hack:hover & {
-    opacity: 0.15;
-  }
-}
-
-.hack__status {
-	border-radius: $border-radius-md;
-	color: $background-color-primary;
-	display: inline-block;
-  font-size: $font-size-xs;
-  font-weight: $font-weight-semibold;
-  line-height: 1;
-  margin-left: auto;
-  padding: 0.125rem 0.1875rem;
-  pointer-events: none;
-
-  &--working {
-    background: $background-color-success;
-  	color: $text-color-success;
-  }
-
-  &--deprecated {
-  	background: $background-color-error;
-    color: $text-color-error;
-  }
-
-  &--unknown {
-  	background: $background-color-warning;
-    color: $text-color-warning;
-  }
-}
-
 .hack__main {
-  padding: 1rem;
+  margin-top: var(--spacing-md);
 
   pre {
     background: $background-color-secondary;
@@ -79,26 +29,26 @@
     display: block;
     font-size: $font-size-sm;
     font-variant-ligatures: none; // Stops #ffff from getting fancied up
-    line-height: 1.5;
-    padding: 1rem;
+    line-height: var(--line-height-lg);
+    padding: var(--spacing-md);
     width: 100%;
   }
 
   p {
     font-size: $font-size-sm;
-    line-height: 1.5;
-    margin-top: 1rem;
+    line-height: var(--line-height-lg);
+    margin-top: var(--spacing-md);
 
     code {
       background-color: $background-color-secondary;
       border-radius: $border-radius-sm;
-      font-size: 0.875em;
+      font-size: $font-size-xs;
       padding: 2px 4px;
     }
   }
 
   p + p {
-    margin-top: 0.5rem;
+    margin-top: var(--spacing-sm);
   }
 
   .hack__meta {
@@ -112,32 +62,5 @@
   color: inherit;
   font-weight: $font-weight-semibold;
   text-decoration: none;
-  transition: $transition-all-short;
-}
-
-// .hack__contributor:hover {
-//   border-bottom: 0.0625rem solid $text-color-primary;
-//   color: $text-color-primary;
-
-//   & ~ .hack__contributor-submissions {
-//     background: $text-color-primary;
-//     border-color: $text-color-primary;
-//     color: $background-color-primary;
-//   }
-// }
-
-.hack__contributor-submissions {
-  border: 0.0625rem solid $border-color-dark;
-  border-radius: $border-radius-pill;
-  display: inline-block;
-  font-size: 0.5rem;
-  font-weight: $font-weight-semibold;
-  line-height: 1;
-  margin-left: 0.1875rem;
-  padding: 0.125rem 0.1875rem;
-  pointer-events: none;
-  position: relative;
-  text-align: center;
-  top: -0.0625rem;
   transition: $transition-all-short;
 }
