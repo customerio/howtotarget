@@ -1,6 +1,5 @@
 .badge {
 	border-radius: $border-radius-md;
-	color: $background-color-primary;
 	display: inline-block;
   font-size: $font-size-xs;
   font-weight: $font-weight-semibold;
@@ -10,17 +9,17 @@
   pointer-events: none;
 
   &--working {
-    background: $background-color-success;
-  	color: $text-color-success;
+    background: var(--color-bg-success);
+  	color: var(--color-fg-success);
   }
 
   &--deprecated {
-  	background: $background-color-error;
-    color: $text-color-error;
+  	background: var(--color-bg-danger);
+    color: var(--color-fg-danger);
   }
 
   &--unknown {
-  	background: $background-color-warning;
-    color: $text-color-warning;
+  	background: var(--color-bg-warning);
+    color: var(--color-fg-warning);
   }
 }

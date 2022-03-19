@@ -1,9 +1,10 @@
 .support {
-	border: 1px solid $border-color-light;
-	border-radius: $border-radius-lg;
-	color: $text-color-primary;
-	display: flex;
 	align-items: flex-start;
+	border: 1px solid var(--color-border);
+	border-radius: $border-radius-lg;
+	color: var(--color-fg-primary);
+	display: flex;
+	font-weight: $font-weight-normal;
 	gap: var(--spacing-md);
 	line-height: var(--line-height-lg);
 	padding: var(--spacing-md);
@@ -11,7 +12,12 @@
 	transition: $transition-all-short;
 
 	&:hover {
-		background-color: $background-color-secondary;
+		background-color: var(--color-bg-secondary);
+		color: var(--color-fg-primary);
+
+		p {
+			color: var(--color-fg-primary);
+		}
 	}
 }
 
@@ -30,6 +36,6 @@
 	}
 
 	p {
-		color: $text-color-secondary;
+		color: var(--color-fg-secondary);
 	}
 }

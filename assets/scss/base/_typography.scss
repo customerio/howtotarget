@@ -3,5 +3,14 @@ html {
   -webkit-font-smoothing:  antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: $sans-serif;
-  color: $text-color-primary;
+}
+
+a {
+  color: inherit;
+  font-weight: $font-weight-semibold;
+  transition: $transition-all-short;
+
+  &:hover {
+    color: var(--color-fg-accent);
+  }
 }

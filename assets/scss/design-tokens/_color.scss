@@ -1,17 +1,18 @@
-$brand-color-primary: #0E8C4D;
+:root {
+  --color-brand: #0E8B4C;
 
-$background-color-primary: #fff;
-$background-color-secondary: #f5f5f5;
-$background-color-tertiary: #767676;
-$background-color-success: #E1F1E9;
-$background-color-warning: #FDF5EB;
-$background-color-error: #FFECEA;
+  --color-fg-primary: #2E3538;
+  --color-fg-secondary: #606F76;
+  --color-fg-accent: #0C7942;
+  --color-fg-success: #0C7942;
+  --color-fg-warning: #A5610E;
+  --color-fg-danger: #C33022;
 
-$text-color-primary: #222;
-$text-color-secondary: #767676;
-$text-color-success: #0E8C4D;
-$text-color-warning: #F2B161;
-$text-color-error: #FF6759;
+  --color-bg-primary: #fff;
+  --color-bg-secondary: #F0F3F4;
+  --color-bg-success: #E1F1E9;
+  --color-bg-warning: #FDF6EC;
+  --color-bg-danger: #FFECEA;
 
-$border-color-light: #f5f5f5;
-$border-color-dark: #767676;
+  --color-border: #F0F3F4;
+}
