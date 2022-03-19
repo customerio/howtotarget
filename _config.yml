@@ -24,7 +24,6 @@ sass:
   style: compressed
 
 plugins:
-  - jekyll-feed
   - jekyll-last-modified-at
   - jekyll-timeago
 
