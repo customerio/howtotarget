@@ -1,0 +1,77 @@
+.highlight {
+  --code-blue:      hsl(190, 40%, 60%);
+  --code-green:     hsl(115, 30%, 65%);
+  --code-grey:      hsl(225, 3%, 45%);
+  --code-grey-dark: hsl(225, 4%, 25%);
+  --code-purple:    hsl(260, 45%, 70%);
+  --code-red:       hsl(340, 40%, 60%);
+  --code-red-dark:  hsl(340, 45%, 30%);
+  --code-white:     hsl(225, 1%, 80%);
+  --code-yellow:    hsl(55, 40%, 65%);
+
+  // Normal text and anything not in a recognised tag
+  color: var(--code-white);
+
+  .bp  { color: var(--code-white) } // Name.Builtin.Pseudo
+  .c   { color: var(--code-grey) } // Comment
+  .c1  { color: var(--code-grey) } // Comment.Single (SCSS comment)
+  .cm  { color: var(--code-grey) } // Comment.Multiline
+  .cp  { color: var(--code-grey) } // Comment.Preproc (!important)
+  .cs  { color: var(--code-grey) } // Comment.Special
+  .err { color: var(--code-red-dark); } // Error
+  .gd  { color: var(--code-red) } // Generic.Deleted & Diff Deleted
+  .ge  { font-style: italic } // Generic.Emph
+  .gh  { } // Generic Heading & Diff Header
+  .gi  { color: var(--code-blue) } // Generic.Inserted & Diff Inserted
+  .gs  { font-weight: bold } // Generic.Strong
+  .gu  { color: var(--code-grey) } // Generic.Subheading & Diff Unified/Comment?
+  .il  { color: var(--code-purple) } // Literal.Number.Integer.Long
+  .k   { color: var(--code-green) } // Keyword (@media)
+  .kc  { color: var(--code-green) } // Keyword.Constant
+  .kd  { color: var(--code-green) } // Keyword.Declaration
+  .kn  { color: var(--code-red) } // Keyword.Namespace
+  .kp  { color: var(--code-green) } // Keyword.Pseudo
+  .kr  { color: var(--code-green) } // Keyword.Reserved
+  .kt  { color: var(--code-green) } // Keyword.Type
+  .l   { color: var(--code-purple) } // Literal
+  .ld  { color: var(--code-yellow) } // Literal.Date
+  .m   { color: var(--code-purple) } // Literal.Number (Number in CSS value)
+  .mf  { color: var(--code-purple) } // Literal.Number.Float
+  .mh  { color: var(--code-purple) } // Literal.Number.Hex
+  .mi  { color: var(--code-purple) } // Literal.Number.Integer
+  .mo  { color: var(--code-purple) } // Literal.Number.Oct
+  .n   { color: var(--code-white) } // Name (Non-numeric values in CSS shorthand)
+  .na  { color: var(--code-blue) } // Name.Attribute (HTML attribute name)
+  .nb  { color: var(--code-white) } // Name.Builtin (CSS value)
+  .nc  { color: var(--code-blue) } // Name.Class
+  .nd  { color: var(--code-blue) } // Name.Decorator
+  .ne  { color: var(--code-blue) } // Name.Exception
+  .nf  { color: var(--code-blue) } // Name.Function
+  .ni  { color: var(--code-white) } // Name.Entity (&nbsp; etc)
+  .nl  { color: var(--code-white) } // Name.Label (CSS property)
+  .nn  { color: var(--code-white) } // Name.Namespace
+  .no  { color: var(--code-green) } // Name.Constant (CSS color value)
+  .nt  { color: var(--code-red) } // Name.Tag (HTML tag/element)
+  .nv  { color: var(--code-white) } // Name.Variable
+  .nx  { color: var(--code-blue) } // Name.Other
+  .o   { color: var(--code-red) } // Operator
+  .ow  { color: var(--code-red) } // Operator.Word
+  .p   { color: var(--code-white) } // Punctuation
+  .py  { color: var(--code-white) } // Name.Property
+  .s   { color: var(--code-yellow) } // Literal.String (HTML attribute value)
+  .s1  { color: var(--code-yellow) } // Literal.String.Single
+  .s2  { color: var(--code-yellow) } // Literal.String.Double
+  .sb  { color: var(--code-yellow) } // Literal.String.Backtick
+  .sc  { color: var(--code-yellow) } // Literal.String.Char
+  .sd  { color: var(--code-yellow) } // Literal.String.Doc
+  .se  { color: var(--code-purple) } // Literal.String.Escape
+  .sh  { color: var(--code-yellow) } // Literal.String.Heredoc
+  .si  { color: var(--code-yellow) } // Literal.String.Interpol
+  .sr  { color: var(--code-yellow) } // Literal.String.Regex
+  .ss  { color: var(--code-yellow) } // Literal.String.Symbol
+  .sx  { color: var(--code-yellow) } // Literal.String.Other
+  .vc  { color: var(--code-white) } // Name.Variable.Class
+  .vg  { color: var(--code-white) } // Name.Variable.Global
+  .vi  { color: var(--code-white) } // Name.Variable.Instance
+  .w   { color: var(--code-white) } // Text.Whitespace
+}
