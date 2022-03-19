@@ -25,13 +25,13 @@ layout: null
           {% endif %}
         </title>
         <summary>{{ hack.content | xml_escape }}</summary>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
+        <pubDate>{{ hack.date | date_to_rfc822 }}</pubDate>
         {% assign link = hack.date | date: "%Y-%m-%d"| append: "-" | append: hack.slug %}
         <id>{{ link | prepend: "#" | prepend: site.url }}</id>
         <guid isPermaLink="true">{{ link | prepend: "#" | prepend: site.url }}</guid>
         <content:encoded>
           <![CDATA[
-            {{ post.content }}
+            {{ hack.content }}
           ]]>
         </content:encoded>
       </item>
