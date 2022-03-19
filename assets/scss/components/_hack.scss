@@ -76,4 +76,8 @@
   font-weight: var(--font-weight-semibold);
   text-decoration: none;
   transition: var(--transition-all-short);
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
