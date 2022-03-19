@@ -1,6 +1,6 @@
 .controls {
 	background-color: var(--color-bg-secondary);
-	border-radius: $border-radius-lg;
+	border-radius: var(--border-radius-lg);
 	padding: var(--spacing-md);
 }
 
@@ -16,35 +16,14 @@
 	width: 100%;
 }
 
-
 .controls__input {
 	appearance: none;
 	background-color: var(--color-bg-primary);
 	border: none;
-	border-radius: $border-radius-md;
+	border-radius: var(--border-radius-md);
 	padding: var(--spacing-sm);
 
 	&::placeholder {
 		color: var(--color-fg-secondary);
-	}
-}
-
-.controls__deprecated {
-	border-radius: $border-radius-md;
-	cursor: pointer;
-	display: inline-block;
-	margin-top: var(--spacing-sm);
-	padding: var(--spacing-sm);
-	padding-left: 0;
-
-	&.disabled {
-		opacity: 0.5;
-		pointer-events: none;
-	}
-
-	input {
-		margin-right: var(--spacing-xs);
-		position: relative;
-		top: -0.0625rem;
 	}
 }

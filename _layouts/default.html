@@ -11,14 +11,14 @@
       {% include components/support.html %}
     </div>
 
-    <ul class="hacks">
+    <main class="hacks">
       {% assign hacks = site.posts | sort: "title" %}
       {% for hack in hacks %}
         {% include components/hack.html %}
       {% endfor %}
 
       {% include components/help-cta.html %}
-    </ul>
+    </main>
   </div>
 
   <script type="text/javascript" src="assets/js/main.js"></script>

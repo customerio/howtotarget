@@ -1,6 +1,6 @@
 .hack {
   border: 1px solid var(--color-border);
-  border-radius: $border-radius-lg;
+  border-radius: var(--border-radius-lg);
   padding: var(--spacing-md);
 }
 
@@ -20,7 +20,7 @@
 
   pre {
     background-color: var(--color-bg-secondary);
-    border-radius: $border-radius-md;
+    border-radius: var(--border-radius-md);
     margin: 0;
   }
 
@@ -40,7 +40,7 @@
 
     code {
       background-color: var(--color-bg-secondary);
-      border-radius: $border-radius-sm;
+      border-radius: var(--border-radius-sm);
       font-size: var(--font-size-xs);
       padding: 2px 4px;
     }

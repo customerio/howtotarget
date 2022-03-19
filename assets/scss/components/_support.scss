@@ -1,7 +1,7 @@
 .support {
 	align-items: flex-start;
 	border: 1px solid var(--color-border);
-	border-radius: $border-radius-lg;
+	border-radius: var(--border-radius-lg);
 	color: var(--color-fg-primary);
 	display: flex;
 	font-weight: var(--font-weight-normal);
