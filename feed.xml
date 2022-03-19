@@ -1,0 +1,40 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ site.title | xml_escape }}</title>
+    <author>
+        <name>{{ site.author.name }}</name>
+        <email>{{ site.author.email }}</email>
+    </author>
+    <description>{{ site.description | xml_escape }}</description>
+    <link>{{ site.url }}</link>
+    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+    <generator>Jekyll v{{ jekyll.version }}</generator>
+
+    {% assign posts = site.posts %}
+    {% for hack in posts limit: 10 %}
+      <item>
+        <title>
+          {{ hack.client | xml_escape }} {{ hack.version | xml_escape }}
+          {% if hack.platform %}
+            ({{ hack.platform | xml_escape }})
+          {% endif %}
+        </title>
+        <summary>{{ hack.content | xml_escape }}</summary>
+        <pubDate>{{ hack.date | date_to_rfc822 }}</pubDate>
+        {% assign link = hack.date | date: "%Y-%m-%d"| append: "-" | append: hack.slug %}
+        <id>{{ link | prepend: "#" | prepend: site.url }}</id>
+        <guid isPermaLink="true">{{ link | prepend: "#" | prepend: site.url }}</guid>
+        <content:encoded>
+          <![CDATA[
+            {{ hack.content }}
+          ]]>
+        </content:encoded>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

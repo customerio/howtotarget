@@ -1,12 +1,14 @@
 title: How to Target Email Clients
-email: dylan@dylanatsmith.com
 description: >- # this means to ignore newlines until "baseurl:"
   Crowdsourced email development techniques for singling out email clients and platforms. Website by @dylanatsmith but made possible by people much smarter.
 baseurl: ""
 url: "https://howtotarget.email"
-github_username: dylanatsmith
 github_repository: https://github.com/dylanatsmith/howtotarget
-twitter_username: dylanatsmith
+author:
+  name: Dylan Smith
+  twitter: dylanatsmith
+  github: dylanatsmith
+  email: dylan@dylanatsmith.com
 
 # Build settings
 # theme: minima
@@ -24,7 +26,6 @@ sass:
   style: compressed
 
 plugins:
-  - jekyll-feed
   - jekyll-last-modified-at
   - jekyll-timeago
 
