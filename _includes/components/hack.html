@@ -1,22 +1,28 @@
-<article class="hack" id="{{ hack.title }}">
+{% assign anchor = hack.date | date: "%Y-%m-%d"| append: "-" | append: hack.slug %}
+
+<article class="hack" id="{{ anchor }}">
   <div class="hack__heading">
     <h2 class="hack__client">
       {{ hack.client }} {{ hack.version }}
       {% if hack.platform %}
-      ({{ hack.platform }})
+        ({{ hack.platform }})
       {% endif %}
     </h2>
+
+    <a href="#{{ anchor }}" class="hack__anchor" aria-label="Anchor link">#</a>
+
     {% include components/badge.html %}
   </div>
+
   <div class="hack__main">
     {{ hack.content }}
+
     <p class="hack__meta">
       Contributed
       <time class="hack__date" datetime="{{ hack.date }}" title="{{ hack.date | date_to_long_string }}">{{ hack.date |
         timeago }}</time>
       by
       <span class="hack__contributor">{{ hack.contributor }}</span>
-      <!-- <span class="hack__contributor-submissions"></span> -->
     </p>
   </div>
 </article>
