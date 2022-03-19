@@ -14,7 +14,8 @@
   --color-bg-warning: #FDF6EC;
   --color-bg-danger: #FFECEA;
 
-  --color-border: var(--color-bg-secondary);
+  --color-border-primary: #C7CED1;
+  --color-border-secondary: var(--color-bg-secondary);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,5 +34,7 @@
     --color-bg-success: #1D3F2E;
     --color-bg-warning: #452B07;
     --color-bg-danger: #4D0700;
+
+    --color-border-primary: #415058;
   }
 }

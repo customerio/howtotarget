@@ -7,8 +7,7 @@ contributor: Mark Robbins
 ---
 
 ```css
-"_:-webkit-full-screen, _::-webkit-full-page-media, _:future, :root
-body:not(.Singleton) .foo"
+_:-webkit-full-screen, _::-webkit-full-page-media, _:future, :root body:not(.Singleton) .foo
 ```
 
 The stuff before `.body` will target WebKit desktop apps on Mac (Apple Mail and Outlook Mac), then we add `:not(.Singleton)` to remove Apple Mail.

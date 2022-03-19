@@ -1,15 +1,21 @@
 .copy-button {
   appearance: none;
-  background-color: transparent;
-  border: 1px solid var(--color-fg-secondary);
-  border-radius: var(--border-radius-md);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-primary);
+  border-radius: var(--border-radius-lg);
   color: var(--color-fg-secondary);
   cursor: pointer;
   font-size: var(--font-size-sm);
-  padding: 4px 8px;
+  opacity: 0;
+  padding: 3px 6px;
   position: absolute;
-  right: 13px;
-  top: 13px;
+  right: var(--spacing-sm);
+  top: var(--spacing-sm);
+  transition: opacity 0.1s ease-in-out;
+
+  &:hover {
+    color: var(--color-fg-primary);
+  }
 
   &::before {
     content: "Copy";
@@ -17,12 +23,15 @@
 
   // This class will be toggled via JavaScript
   &.copied {
-    &::before {
-      content: "Copied!";
-    }
+    pointer-events: none;
 
-    &::after {
-      content: "✔️";
+    &::before {
+      content: "Copied";
     }
+  }
+
+  .hack:hover & {
+    opacity: 1;
+    transition-delay: 0.2s;
   }
 }
