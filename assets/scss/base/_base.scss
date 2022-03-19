@@ -7,7 +7,7 @@
 }
 
 html {
-  accent-color: $brand-color-primary;
+  accent-color: var(--color-fg-accent);
 	background: $background-color-primary;
   height:     100%;
   font-size:  16px;
