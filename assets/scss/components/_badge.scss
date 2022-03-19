@@ -1,0 +1,26 @@
+.badge {
+	border-radius: $border-radius-md;
+	color: $background-color-primary;
+	display: inline-block;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-semibold;
+  line-height: var(--line-height-sm);
+  margin-left: auto;
+  padding: 0.125rem 0.1875rem;
+  pointer-events: none;
+
+  &--working {
+    background: $background-color-success;
+  	color: $text-color-success;
+  }
+
+  &--deprecated {
+  	background: $background-color-error;
+    color: $text-color-error;
+  }
+
+  &--unknown {
+  	background: $background-color-warning;
+    color: $text-color-warning;
+  }
+}

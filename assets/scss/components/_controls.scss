@@ -1,8 +1,7 @@
 .controls {
 	background: $background-color-secondary;
 	border-radius: $border-radius-lg;
-	margin-top: 1rem;
-	padding: 1rem;
+	padding: var(--spacing-md);
 }
 
 .controls__heading {
@@ -13,7 +12,7 @@
 .controls__label:not(:first-of-type),
 .controls__input {
 	display: block;
-	margin-top: 0.5rem;
+	margin-top: var(--spacing-sm);
 	width: 100%;
 }
 
@@ -22,15 +21,15 @@
 	appearance: none;
 	border: none;
 	border-radius: $border-radius-md;
-	padding: 0.5rem;
+	padding: var(--spacing-sm);
 }
 
 .controls__deprecated {
 	border-radius: $border-radius-md;
 	cursor: pointer;
 	display: inline-block;
-	margin-top: 0.5rem;
-	padding: 0.5rem;
+	margin-top: var(--spacing-sm);
+	padding: var(--spacing-sm);
 	padding-left: 0;
 
 	&.disabled {
@@ -39,7 +38,7 @@
 	}
 
 	input {
-		margin-right: 0.25rem;
+		margin-right: var(--spacing-xs);
 		position: relative;
 		top: -0.0625rem;
 	}

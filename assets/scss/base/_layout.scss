@@ -1,6 +1,6 @@
 .wrapper {
 	display: flex;
-	gap: 2rem;
+	gap: var(--spacing-lg);
 	margin: 0 auto;
 	max-width: 65rem;
 
@@ -16,12 +16,13 @@
 	flex-direction: column;
   flex-shrink: 0;
   font-size: $font-size-sm;
+	gap: var(--spacing-md);
 	max-width: 19rem;
 	position: sticky;
-	top: 2rem;
+	top: var(--spacing-lg);
 
 	@media screen and (max-width: 55rem) {
-		margin-bottom: 2rem;
+		margin-bottom: var(--spacing-lg);
 		position: initial;
 		max-width: 100%;
 		width: 100%;
@@ -31,12 +32,11 @@
 .hacks {
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	gap: var(--spacing-md);
 	list-style-type: none;
-	margin: 3rem 0 0;
+	margin: var(--spacing-xl) 0 0;
 	overflow: hidden;
 	padding: 0;
-	width: 100%;
 
 	@media screen and (max-width: 55rem) {
 		margin-top: 0;

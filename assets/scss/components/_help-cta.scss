@@ -2,11 +2,11 @@
 	background-color: $background-color-secondary;
 	border-radius: $border-radius-lg;
 	font-size: $font-size-sm;
-	line-height: 1.5;
-	padding: 2rem;
+	line-height: var(--line-height-lg);
+	padding: var(--spacing-lg);
 	text-align: center;
 
 	a {
-		color: #0e8c4d;
+		color: $brand-color-primary;
 	}
 }

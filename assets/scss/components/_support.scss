@@ -4,9 +4,9 @@
 	color: $text-color-primary;
 	display: flex;
 	align-items: flex-start;
-	gap: 1rem;
-	margin-top: 1rem;
-	padding: 1rem;
+	gap: var(--spacing-md);
+	line-height: var(--line-height-lg);
+	padding: var(--spacing-md);
 	text-decoration: none;
 	transition: $transition-all-short;
 
@@ -23,7 +23,7 @@
 .support__text {
 	display: flex;
 	flex-direction: column;
-	gap: 0.25rem;
+	gap: var(--spacing-xs);
 
 	span {
 		font-weight: $font-weight-bold;

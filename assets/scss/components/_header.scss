@@ -1,5 +1,6 @@
 .header__logo {
 	color: $text-color-success;
+	// This optically centres the circle in the logo
 	margin-left: -0.675rem;
 	margin-top: -0.5rem;
 }
@@ -7,11 +8,7 @@
 .header__title {
 	font-size: $font-size-lg;
 	display: inline-block;
-	margin-left: 0.125rem;
+	margin-left: var(--spacing-xs);
 	position: relative;
-	top: 0.0625rem;
-
-	@media screen and (max-width: 325px) {
-		font-size: 1.125rem;
-	}
+	top: 1px;
 }

@@ -7,6 +7,7 @@
 @import "design-tokens/font-family";
 @import "design-tokens/font-size";
 @import "design-tokens/font-weight";
+@import "design-tokens/line-height";
 @import "design-tokens/spacing";
 @import "design-tokens/transition";
 
@@ -17,8 +18,9 @@
 @import "base/typography";
 
 /* Components */
+@import "components/about";
+@import "components/badge";
 @import "components/controls";
-@import "components/footer";
 @import "components/hack";
 @import "components/header";
 @import "components/help-cta";

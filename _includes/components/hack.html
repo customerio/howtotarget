@@ -6,8 +6,7 @@
       ({{ hack.platform }})
       {% endif %}
     </h2>
-    <!-- <a href="" class="hack__anchor"><img src="assets/icons/link.svg" alt=""></a> -->
-    <span class="hack__status hack__status--{{ hack.status | downcase }}">{{ hack.status }}</span>
+    {% include components/badge.html %}
   </div>
   <div class="hack__main">
     {{ hack.content }}
