@@ -1,5 +1,5 @@
 .hack {
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-border-secondary);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-md);
 }
@@ -22,16 +22,20 @@
 
   .hack:hover & {
     opacity: 1;
+    transition-delay: 0.2s;
   }
 }
 
 .hack__main {
   margin-top: var(--spacing-md);
+  // Needed for positioning copy button
+  position: relative;
 
   pre {
     background-color: var(--color-bg-secondary);
     border-radius: var(--border-radius-md);
     margin: 0;
+    white-space: pre-wrap;
   }
 
   pre > code {

@@ -8,9 +8,9 @@ contributor: Mark Robbins
 
 ```html
 <noscript>
- <style>
- .& .foo{}
- </style>
+  <style>
+    .& .foo{}
+  </style>
 </noscript>
 ```
 

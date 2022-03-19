@@ -1,3 +1,4 @@
+// Live filtering of the hacks
 let searchInput = document.getElementById("filter-input");
 let hacks = document.querySelectorAll(".hack");
 
@@ -19,4 +20,23 @@ function liveSearch() {
 
 searchInput.addEventListener("keyup", () => {
   liveSearch();
+});
+
+// Copy button
+const codeBlocks = document.querySelectorAll(
+  ".copy-button + .highlighter-rouge"
+);
+const copyCodeButtons = document.querySelectorAll(".copy-button");
+
+copyCodeButtons.forEach((copyCodeButton, index) => {
+  const code = codeBlocks[index].innerText;
+
+  copyCodeButton.addEventListener("click", () => {
+    window.navigator.clipboard.writeText(code);
+    copyCodeButton.classList.add("copied");
+
+    setTimeout(() => {
+      copyCodeButton.classList.remove("copied");
+    }, 2000);
+  });
 });
