@@ -1,7 +1,7 @@
 ---
 ---
 
-/* Design tokens */
+// Design tokens
 @import "design-tokens/color";
 @import "design-tokens/border-radius";
 @import "design-tokens/font-family";
@@ -11,13 +11,13 @@
 @import "design-tokens/spacing";
 @import "design-tokens/transition";
 
-/* Base styles */
+// Base styles
 @import "base/normalize";
 @import "base/base";
 @import "base/layout";
 @import "base/typography";
 
-/* Components */
+// Components
 @import "components/about";
 @import "components/badge";
 @import "components/controls";
@@ -25,3 +25,6 @@
 @import "components/header";
 @import "components/help-cta";
 @import "components/support";
+
+// Utilities
+@import "utilities/visibility";

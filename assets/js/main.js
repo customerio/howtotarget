@@ -1,6 +1,5 @@
 let searchInput = document.getElementById("filter-input");
 let hacks = document.querySelectorAll(".hack");
-let emptyState = document.getElementById("empty-state");
 
 function liveSearch() {
   let search_query = document.getElementById("filter-input").value;
