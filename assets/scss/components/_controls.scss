@@ -19,9 +19,14 @@
 
 .controls__input {
 	appearance: none;
+	background-color: var(--color-bg-primary);
 	border: none;
 	border-radius: $border-radius-md;
 	padding: var(--spacing-sm);
+
+	&::placeholder {
+		color: var(--color-fg-secondary);
+	}
 }
 
 .controls__deprecated {
