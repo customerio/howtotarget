@@ -1,6 +1,6 @@
 # 🎯 How to Target Email Clients
 
-A collection of crowdsourced email development techniques for singling out email clients and platforms based on initial research by [Mark Robbins](https://github.com/m-j-robbins).
+A collection of crowdsourced email development techniques for singling out email clients and platforms based on research by [Mark Robbins](https://github.com/m-j-robbins).
 
 ## Using the site
 
@@ -25,11 +25,9 @@ u + .body .your-class {
 
 ## Contributing email hacks
 
-### Open an issue
+If you know of a targetting methods not yet listed, or have found a listed technique to no longer work, please [open an issue](https://github.com/dylanatsmith/howtotarget/issues) or a pull request.
 
-// TODO
-
-### Open a pull request
+### Opening a pull request
 
 PRs are welcome and should follow the existing file name and format conventions.
 
@@ -44,12 +42,11 @@ PRs are welcome and should follow the existing file name and format conventions.
   * **Note:** All fields should be present; if not applicable, leave blank
 * Code blocks should always be wrapped in [fences](https://www.markdownguide.org/extended-syntax/#fenced-code-blocks) ( ` ``` `) with the language name appended to the opening fence (ex: ` ```html` or ` ```css`)
 * Explanations of how and why the code works are encouraged and should be added below the code snippets; this can include markup like inline code and links
-
-If this is your first contribution, you should also add yourself to [contributors.yml](https://github.com/dylanatsmith/howtotarget/blob/master/_data/contributors.yml) in alphabetical order.
+* If this is your first contribution, you should also add yourself to [contributors.yml](https://github.com/dylanatsmith/howtotarget/blob/master/_data/contributors.yml) in alphabetical order.
 
 ## Contributing to development
 
-The site runs on Jekyll.
+See [Jekyll’s quick start guide](https://jekyllrb.com/docs/) for running the site in local development.
 
 ---
 
