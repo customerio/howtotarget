@@ -1,6 +1,6 @@
 .hack {
   background: $background-color-primary;
-  border: 1px solid $border-color-light;
+  border: 1px solid var(--color-border);
   border-radius: $border-radius-lg;
   padding: var(--spacing-md);
 }
