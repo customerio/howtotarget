@@ -17,6 +17,8 @@ layout: null
 
     {% assign posts = site.posts %}
     {% for hack in posts limit: 10 %}
+      {% assign link = hack.date | date: "%Y-%m-%d"| append: "-" | append: hack.slug %}
+      {% assign contributor = site.data.contributors[hack.contributor] %}
       <item>
         <title>
           {{ hack.client | xml_escape }} {{ hack.version | xml_escape }}
@@ -26,12 +28,12 @@ layout: null
         </title>
         <summary>{{ hack.content | xml_escape }}</summary>
         <pubDate>{{ hack.date | date_to_rfc822 }}</pubDate>
-        {% assign link = hack.date | date: "%Y-%m-%d"| append: "-" | append: hack.slug %}
         <id>{{ link | prepend: "#" | prepend: site.url }}</id>
         <guid isPermaLink="true">{{ link | prepend: "#" | prepend: site.url }}</guid>
         <content:encoded>
           <![CDATA[
             {{ hack.content }}
+            <p>Contributed by <a href="{{ contributor.twitter_url }}">{{ contributor.name }}</a></p>
           ]]>
         </content:encoded>
       </item>
