@@ -1,6 +1,6 @@
 title: How to Target Email Clients
 description: >- # this means to ignore newlines until "baseurl:"
-  Crowdsourced email development techniques for singling out email clients and platforms. Website by @dylanatsmith but made possible by people much smarter.
+  Crowdsourced email development techniques for singling out email clients and platforms.
 baseurl: ""
 url: "https://howtotarget.email"
 github_repository: https://github.com/dylanatsmith/howtotarget
