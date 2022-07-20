@@ -27,3 +27,9 @@
 		color: var(--color-fg-secondary);
 	}
 }
+
+.controls__checkbox-wrapper {
+	display: flex;
+	gap: var(--spacing-xs);
+	margin-top: var(--spacing-md);
+}
