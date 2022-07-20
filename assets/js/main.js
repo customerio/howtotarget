@@ -22,6 +22,14 @@ searchInput.addEventListener("keyup", () => {
   liveSearch();
 });
 
+// toggle deprecated hacks
+let deprecatedCheckbox = document.getElementById("filter-deprecated");
+let hacksWrapper = document.querySelector('.hacks');
+
+deprecatedCheckbox.addEventListener("change", () => {
+  hacksWrapper.classList.toggle('hacks--show-deprecated', deprecatedCheckbox.checked);
+});
+
 // Copy button
 const codeBlocks = document.querySelectorAll(
   ".copy-button + .highlighter-rouge"

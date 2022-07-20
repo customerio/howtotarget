@@ -81,3 +81,7 @@
     text-decoration: underline;
   }
 }
+
+.hacks:not(.hacks--show-deprecated) .hack--deprecated {
+  display: none;
+}

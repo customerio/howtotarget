@@ -27,3 +27,15 @@
 		color: var(--color-fg-secondary);
 	}
 }
+
+.controls__checkbox-wrapper {
+	margin-top: var(--spacing-sm);
+
+	input, label {
+		vertical-align: middle;
+	}
+
+	label {
+		margin-left: var(--spacing-xs);
+	}
+}

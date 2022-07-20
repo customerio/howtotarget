@@ -1,7 +1,7 @@
 {% assign anchor = hack.date | date: "%Y-%m-%d"| append: "-" | append: hack.slug %}
 {% assign contributor = site.data.contributors[hack.contributor] %}
 
-<article class="hack" id="{{ anchor }}">
+<article class="hack hack--{{ hack.status | downcase }}" id="{{ anchor }}">
   <div class="hack__heading">
     <h2 class="hack__client">
       {{ hack.client }} {{ hack.version }}
