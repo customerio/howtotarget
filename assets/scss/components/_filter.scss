@@ -29,13 +29,7 @@
 }
 
 .controls__checkbox-wrapper {
-	margin-top: var(--spacing-sm);
-
-	input, label {
-		vertical-align: middle;
-	}
-
-	label {
-		margin-left: var(--spacing-xs);
-	}
+	display: flex;
+	gap: var(--spacing-xs);
+	margin-top: var(--spacing-md);
 }
