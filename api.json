@@ -6,7 +6,8 @@
     "version": "0.0.1"
   },
   "hacks": [
-    {% for hack in site.posts %}
+    {% assign hacks = site.posts | sort: 'date' %}
+    {% for hack in hacks %}
       {
         "client": {{ hack.client | jsonify}},
         "version": {{ hack.version | jsonify }},
