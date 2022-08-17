@@ -1,1 +1,21 @@
-API
+---
+---
+
+{
+  "meta": {
+    "version": "0.0.1"
+  },
+  "hacks": [
+    {% for post in site.posts %}
+      {
+        "client": "{{ hack.client | jsonify}}",
+        "version": "{{ hack.version | jsonify }}",
+        "platform": "{{ hack.platform | jsonify }}",
+        "status": "{{ hack.status | jsonify }}",
+        "date_added": "{{ hack.date | jsonify }}",
+        "contributor": "{{ hack.contributor | jsonify }}",
+        "description": "{{ hack.content | jsonify }}"
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
