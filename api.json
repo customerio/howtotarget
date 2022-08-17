@@ -14,7 +14,7 @@
         "status": {{ hack.status | jsonify }},
         "date_added": {{ hack.date |  date: "%s" | jsonify }},
         "contributor": {{ hack.contributor | jsonify }},
-        "description": {{ hack.content | jsonify }}
+        "description": {{ hack.raw_content | jsonify }}
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
