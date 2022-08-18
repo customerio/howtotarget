@@ -10,5 +10,10 @@ contributor: Mark Robbins
 
 ```css
 meta ~ * .your-class-name {}
+```
+
+or
+
+```css
 title ~ * .your-class-name {}
 ```
