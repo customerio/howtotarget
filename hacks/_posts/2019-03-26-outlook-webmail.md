@@ -9,5 +9,7 @@ contributor: Mark Robbins
 ---
 
 ```css
-[owa].foo x:default .foo
+[owa].your-class-name x:default .your-class-name {
+  /* Replace this comment with your styles */
+}
 ```

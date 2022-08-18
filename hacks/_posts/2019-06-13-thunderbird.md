@@ -9,9 +9,9 @@ contributor: Arfon Davis
 ---
 
 ```css
-@media screen and (-moz-device-pixel-ratio){
-  class {
-    // add styles here
+@media screen and (-moz-device-pixel-ratio) {
+  .your-class-name {
+    /* Replace this comment with your styles */
   }
 }
 ```

@@ -9,5 +9,7 @@ contributor: Mark Robbins
 ---
 
 ```css
-.edo-email-view .foo
+.edo-email-view .your-class-name {
+  /* Replace this comment with your styles */
+}
 ```
