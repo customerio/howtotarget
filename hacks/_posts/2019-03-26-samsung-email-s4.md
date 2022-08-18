@@ -9,5 +9,5 @@ contributor: Mark Robbins
 ---
 
 ```css
-#secdiv
+#secdiv {}
 ```

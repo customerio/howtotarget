@@ -9,7 +9,7 @@ contributor: Mark Robbins
 ---
 
 ```css
-div > u + .body .foo
+div > u + .body .foo {}
 ```
 
 Gmail changes the doctype to `<u></u>`. This is placed adjacent to a div that inherits class and id from the body tag.

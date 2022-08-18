@@ -10,8 +10,6 @@ contributor: Arfon Davis
 
 ```css
 @media screen and (-moz-device-pixel-ratio){
-  class {
-    // add styles here
-  }
+  .foo {}
 }
 ```

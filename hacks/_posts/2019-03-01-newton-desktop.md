@@ -9,5 +9,5 @@ contributor: Mark Robbins
 ---
 
 ```css
-#cm_mail_smart_body .foo
+#cm_mail_smart_body .foo {}
 ```

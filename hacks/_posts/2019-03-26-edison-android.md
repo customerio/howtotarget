@@ -9,5 +9,5 @@ contributor: Mark Robbins
 ---
 
 ```css
-.edo-email-view .foo
+.edo-email-view .foo {}
 ```
