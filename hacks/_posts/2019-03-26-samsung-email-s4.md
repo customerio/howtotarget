@@ -9,5 +9,7 @@ contributor: Mark Robbins
 ---
 
 ```css
-#secdiv { /* Replace this comment with your styles */ }
+#secdiv {
+  /* Replace this comment with your styles */
+}
 ```

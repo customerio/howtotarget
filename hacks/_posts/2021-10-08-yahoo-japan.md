@@ -12,7 +12,9 @@ contributor: Mark Robbins
 ```html
 <noscript>
   <style>
-    .& .your-class-name { /* Replace this comment with your styles */ }
+    .& .your-class-name {
+      /* Replace this comment with your styles */
+    }
   </style>
 </noscript>
 ```

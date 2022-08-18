@@ -9,5 +9,7 @@ contributor: Mark Robbins
 ---
 
 ```css
-#MessageViewBody { /* Replace this comment with your styles */ }
+#MessageViewBody {
+  /* Replace this comment with your styles */
+}
 ```

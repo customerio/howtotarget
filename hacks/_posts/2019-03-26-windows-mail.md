@@ -9,5 +9,7 @@ contributor: Mark Robbins
 ---
 
 ```css
-_:-ms-input-placeholder, :root .your-class-name { /* Replace this comment with your styles */ }
+_:-ms-input-placeholder, :root .your-class-name {
+  /* Replace this comment with your styles */
+}
 ```

@@ -9,7 +9,9 @@ contributor: Mark Robbins
 ---
 
 ```css
-[data-outlook-cycle*="INSERT_STYLES"] .your-class-name { /* Replace this comment with your styles */ }
+[data-outlook-cycle*="INSERT_STYLES"] .your-class-name {
+  /* Replace this comment with your styles */
+}
 ```
 
 Where it says `"INSERT_STYLES"` you need to keep that text as it is and not actually insert your styles.
