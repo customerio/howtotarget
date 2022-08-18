@@ -9,7 +9,7 @@ contributor: Mark Robbins
 ---
 
 ```css
-[data-ogsc] .your-class-name {}
+[data-ogsc] .your-class-name { /* Replace this comment with your styles */ }
 ```
 
 When changing a color style in dark mode, Outlook will add `data-ogsc` to the element. When changing a background-color style in dark mode, Outlook will add `data-ogsb` to the element.

@@ -9,7 +9,7 @@ contributor: Mark Robbins
 ---
 
 ```css
-.body > div > div > .wrapper .your-class-name {}
+.body > div > div > .wrapper .your-class-name { /* Replace this comment with your styles */ }
 ```
 
 Samsung inserts a couple of divs between the body and the wrapper. Same hack as Nine.

@@ -9,5 +9,5 @@ contributor: Mark Robbins
 ---
 
 ```css
-_:-ms-fullscreen, :root .your-class-name {}
+_:-ms-fullscreen, :root .your-class-name { /* Replace this comment with your styles */ }
 ```

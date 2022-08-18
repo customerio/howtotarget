@@ -10,7 +10,7 @@ contributor: Mark Robbins
 
 ```css
 @media (display-mode: standalone) {
-  [class~=""x_your-class-name""]{}
+  [class~=""x_your-class-name""] { /* Replace this comment with your styles */ }
 }
 ```
 

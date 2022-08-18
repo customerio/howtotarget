@@ -9,7 +9,7 @@ contributor: Arfon Davis
 ---
 
 ```css
-@media screen and (-moz-device-pixel-ratio){
-  .your-class-name {}
+@media screen and (-moz-device-pixel-ratio) {
+  .your-class-name { /* Replace this comment with your styles */ }
 }
 ```

@@ -9,5 +9,5 @@ contributor: Mark Robbins
 ---
 
 ```css
-.edo .your-class-name {}
+.edo .your-class-name { /* Replace this comment with your styles */ }
 ```

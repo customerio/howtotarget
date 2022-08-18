@@ -9,5 +9,5 @@ contributor: Mark Robbins
 ---
 
 ```css
-#cm_mail_smart_body .your-class-name {}
+#cm_mail_smart_body .your-class-name { /* Replace this comment with your styles */ }
 ```
