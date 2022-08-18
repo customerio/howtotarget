@@ -14,4 +14,4 @@ contributor: Mark Robbins
 
 The `\0` gets removed as part of the HTML cleanup. Be aware that Gmail will remove a style block with this code, so it needs to be included in a separate `<style>` block.
 
-This can also be added directly to a style, like `.your-class-name{ background: red\0/;}`.
+This can also be added directly to a style, like `.your-class-name { background: red\0/; }`.
