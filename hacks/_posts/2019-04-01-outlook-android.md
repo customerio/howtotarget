@@ -10,7 +10,7 @@ contributor: Jay Oram
 
 ```css
 @media (min-resolution: 1dpi) {
-  body[data-outlook-cycle] .foo {
+  body[data-outlook-cycle] .your-class-name {
     display: block!important;
   }
 }

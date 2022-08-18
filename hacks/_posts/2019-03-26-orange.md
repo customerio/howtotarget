@@ -9,8 +9,17 @@ contributor: Mark Robbins
 ---
 
 ```css
-meta ~ * .foo
-title ~ * .foo
+meta ~ * .your-class-name {
+  /* Replace this comment with your styles */
+}
+```
+
+or
+
+```css
+title ~ * .your-class-name {
+  /* Replace this comment with your styles */
+}
 ```
 
 The head and body structure of the email is removed, making content in the head siblings of that in the body, so we can target with this. Applies to Thunderbird, Freenet (`title` element only), Orange.fr, and Samsung.

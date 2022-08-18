@@ -9,6 +9,15 @@ contributor: Mark Robbins
 ---
 
 ```css
-meta ~ * .foo
-title ~ * .foo
+meta ~ * .your-class-name {
+  /* Replace this comment with your styles */
+}
+```
+
+or
+
+```css
+title ~ * .your-class-name {
+  /* Replace this comment with your styles */
+}
 ```
