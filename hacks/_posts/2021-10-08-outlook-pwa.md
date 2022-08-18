@@ -3,6 +3,8 @@ client: Outlook
 version:
 platform: PWA
 status: Working
+languages:
+  - CSS
 contributor: Mark Robbins
 ---
 

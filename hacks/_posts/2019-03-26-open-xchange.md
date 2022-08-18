@@ -3,6 +3,8 @@ client: Open-Xchange
 version:
 platform:
 status: Working
+languages:
+  - CSS
 contributor: Mark Robbins
 ---
 

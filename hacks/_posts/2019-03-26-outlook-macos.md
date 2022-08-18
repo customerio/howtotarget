@@ -3,6 +3,8 @@ client: Outlook
 version:
 platform: macOS
 status: Working
+languages:
+  - CSS
 contributor: Mark Robbins
 ---
 

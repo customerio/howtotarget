@@ -3,6 +3,8 @@ client: Thunderbird
 version:
 platform:
 status: Working
+languages:
+  - CSS
 contributor: Arfon Davis
 ---
 
