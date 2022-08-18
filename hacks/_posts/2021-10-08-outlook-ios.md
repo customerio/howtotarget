@@ -3,6 +3,8 @@ client: Outlook
 version:
 platform: iOS
 status: Deprecated
+languages:
+  - CSS
 contributor: Mark Robbins
 ---
 

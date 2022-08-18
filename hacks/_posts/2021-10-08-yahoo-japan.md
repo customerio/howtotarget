@@ -3,6 +3,9 @@ client: Yahoo Japan
 version:
 platform: webmail
 status: Working
+languages:
+  - HTML
+  - CSS
 contributor: Mark Robbins
 ---
 

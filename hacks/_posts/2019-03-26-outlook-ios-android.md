@@ -3,6 +3,8 @@ client: Outlook
 version:
 platform: iOS & Android
 status: Working
+languages:
+  - CSS
 contributor: Mark Robbins
 ---
 

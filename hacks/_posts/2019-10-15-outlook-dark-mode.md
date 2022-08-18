@@ -3,6 +3,8 @@ client: Outlook
 version:
 platform: webmail & iOS dark modes
 status: Working
+languages:
+  - CSS
 contributor: Mark Robbins
 ---
 
