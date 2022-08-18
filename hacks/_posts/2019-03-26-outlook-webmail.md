@@ -3,6 +3,8 @@ client: Outlook
 version:
 platform: webmail
 status: Deprecated
+languages:
+  - CSS
 contributor: Mark Robbins
 ---
 

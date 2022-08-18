@@ -3,6 +3,8 @@ client: Edison
 version:
 platform: Android
 status: Working
+languages:
+  - CSS
 contributor: Mark Robbins
 ---
 

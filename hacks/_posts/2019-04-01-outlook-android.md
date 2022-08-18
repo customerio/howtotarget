@@ -3,6 +3,8 @@ client: Outlook
 version:
 platform: Android
 status: Deprecated
+languages:
+  - CSS
 contributor: Jay Oram
 ---
 
