@@ -9,6 +9,6 @@ contributor: Mark Robbins
 ---
 
 ```css
-meta ~ * .foo {}
-title ~ * .foo {}
+meta ~ * .your-class-name {}
+title ~ * .your-class-name {}
 ```

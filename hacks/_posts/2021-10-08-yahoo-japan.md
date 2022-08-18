@@ -12,7 +12,7 @@ contributor: Mark Robbins
 ```html
 <noscript>
   <style>
-    .& .foo{}
+    .& .your-class-name{}
   </style>
 </noscript>
 ```

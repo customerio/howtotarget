@@ -9,7 +9,7 @@ contributor: Mark Robbins
 ---
 
 ```css
-.mail-detail-content .foo {}
+.mail-detail-content .your-class-name {}
 ```
 
 Comcast wraps code with `class="mail-detail-content"`. This also targets Libero.
