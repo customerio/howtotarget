@@ -1,0 +1,27 @@
+---
+---
+
+{
+  "meta": {
+    "version": "0.0.1"
+  },
+  "hacks": [
+    {% assign hacks = site.posts | sort: 'date' %}
+    {% for hack in hacks %}
+      {
+        "client": {{ hack.client | jsonify}},
+        "version": {{ hack.version | jsonify }},
+        "platform": {{ hack.platform | jsonify }},
+        "status": {{ hack.status | jsonify }},
+        "languages": [
+          {% for language in hack.languages %}
+            {{ language | jsonify }}{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+         ],
+        "date_added": {{ hack.date |  date: "%s" | jsonify }},
+        "contributor": {{ hack.contributor | jsonify }},
+        "description": {{ hack.raw_content | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
