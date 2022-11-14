@@ -14,4 +14,4 @@ contributor: Mark Robbins
 }
 ```
 
-The class name `c17637`, is not a user firendly readable name, which may mean it's more likly to change at some point. So use it with caution.
+The class name `c17637` is automated and not human-readable, which may mean it's more likely to change in the future. Use this with caution.
