@@ -29,8 +29,6 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
-    jekyll-feed (0.16.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-last-modified-at (1.3.0)
       jekyll (>= 3.7, < 5.0)
       posix-spawn (~> 0.3.9)
@@ -65,19 +63,22 @@ GEM
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.8.0)
+    webrick (1.8.1)
 
 PLATFORMS
+  arm64-darwin-21
   universal-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.2.2)
-  jekyll-feed (~> 0.12)
   jekyll-last-modified-at
   jekyll-timeago
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
+  webrick (~> 1.8)
 
 BUNDLED WITH
-   2.3.9
+   2.4.8

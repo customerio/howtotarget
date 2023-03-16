@@ -1,14 +1,27 @@
+.header {
+	display: flex;
+}
+
 .header__logo {
 	color: var(--color-brand);
 	// This optically centres the circle in the logo
 	margin-left: -0.675rem;
-	margin-top: -0.5rem;
+	// margin-top: -0.5rem;
+	margin-right: 0.1rem;
 }
 
 .header__title {
 	font-size: var(--font-size-lg);
 	display: inline-block;
-	margin-left: var(--spacing-xs);
+	margin-left: var(--spacing-sm);
 	position: relative;
 	top: 1px;
+}
+
+
+.header__curatedBy {
+	margin-left: var(--spacing-sm);
+	margin-top: 0.4rem;
+	display: flex;
+	align-items: center;
 }
