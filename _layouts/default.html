@@ -1,26 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
-<body>
+  {% include head.html %}
+  <body>
+    <div class="wrapper">
+      <div class="sidebar">
+        {% include components/header.html %} {% include components/filter.html
+        %} {% include components/about.html %} {% include
+        components/subscribe.html %}
+      </div>
 
-  <div class="wrapper">
-    <div class="sidebar">
-      {% include components/header.html %}
-      {% include components/filter.html %}
-      {% include components/about.html %}
-      {% include components/support.html %}
+      <main class="hacks">
+        {% assign hacks = site.posts | sort: "title" %} {% for hack in hacks %}
+        {% include components/hack.html %} {% endfor %} {% include
+        components/help-cta.html %}
+      </main>
     </div>
 
-    <main class="hacks">
-      {% assign hacks = site.posts | sort: "title" %}
-      {% for hack in hacks %}
-        {% include components/hack.html %}
-      {% endfor %}
-
-      {% include components/help-cta.html %}
-    </main>
-  </div>
-
-  <script type="text/javascript" src="assets/js/main.js"></script>
-</body>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
 </html>

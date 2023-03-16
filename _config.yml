@@ -3,12 +3,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   Crowdsourced email development techniques for singling out email clients and platforms.
 baseurl: ""
 url: "https://howtotarget.email"
-github_repository: https://github.com/dylanatsmith/howtotarget
+github_repository: https://github.com/customerio/howtotarget
 author:
-  name: Dylan Smith
-  twitter: dylanatsmith
-  github: dylanatsmith
-  email: dylan@dylanatsmith.com
+  name: Parcel
+  twitter: useparcel
+  github: customerio
+  email: hello@parcel.io
 
 # Build settings
 # theme: minima

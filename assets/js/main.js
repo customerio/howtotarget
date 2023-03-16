@@ -24,10 +24,13 @@ searchInput.addEventListener("keyup", () => {
 
 // toggle deprecated hacks
 let deprecatedCheckbox = document.getElementById("filter-deprecated");
-let hacksWrapper = document.querySelector('.hacks');
+let hacksWrapper = document.querySelector(".hacks");
 
 deprecatedCheckbox.addEventListener("change", () => {
-  hacksWrapper.classList.toggle('hacks--show-deprecated', deprecatedCheckbox.checked);
+  hacksWrapper.classList.toggle(
+    "hacks--show-deprecated",
+    deprecatedCheckbox.checked
+  );
 });
 
 // Copy button
@@ -47,4 +50,32 @@ copyCodeButtons.forEach((copyCodeButton, index) => {
       copyCodeButton.classList.remove("copied");
     }, 2000);
   });
+});
+
+// subscribe form
+const subscribeForm = document.getElementById("subscribe-form");
+
+subscribeForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch(`https://api.parcel.io/important-tips`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: e.target.elements.email.value,
+        source: "howtotarget",
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    subscribeForm.classList.add("subscribe--submitted");
+  } catch (e) {
+    alert("Something went wrong! Please try again later.");
+    return;
+  }
 });
