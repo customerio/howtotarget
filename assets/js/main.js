@@ -59,14 +59,13 @@ subscribeForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
   try {
-    const response = await fetch(`https://api.parcel.io/important-tips`, {
+    const response = await fetch(`/api/subscribe`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
         email: e.target.elements.email.value,
-        source: "howtotarget",
       }),
     });
 
