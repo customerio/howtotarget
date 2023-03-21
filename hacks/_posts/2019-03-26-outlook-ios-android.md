@@ -1,7 +1,7 @@
 ---
 client: Outlook
 version:
-platform: iOS & Android
+platform: webmail, iOS & Android
 status: Working
 languages:
   - CSS

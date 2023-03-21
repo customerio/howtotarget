@@ -14,8 +14,8 @@ _:-webkit-full-screen, _::-webkit-full-page-media, _:future, :root body:not(.Sin
 }
 ```
 
-The stuff before `.body` will target WebKit desktop apps on Mac (Apple Mail and Outlook Mac), then we add `:not(.Singleton)` to remove Apple Mail.
+The stuff before `body` will target WebKit desktop apps on Mac (Apple Mail and Outlook Mac), then we add `:not(.Singleton)` to remove Apple Mail.
 
-This also targets Spark desktop app.
+This also targets Spark desktop app and iOS AppleMail.
 
 Note that this will not work for non-Outlook accounts.
