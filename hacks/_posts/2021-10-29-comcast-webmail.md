@@ -14,4 +14,4 @@ contributor: Mark Robbins
 }
 ```
 
-Comcast wraps code with `class="mail-detail-content"`. This also targets Libero.
+Comcast wraps code with `class="mail-detail-content"`. This also targets Libero, Ionos, Xfinity.
