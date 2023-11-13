@@ -33,7 +33,7 @@ layout: null
         <content:encoded>
           <![CDATA[
             {{ hack.content }}
-            <p>Contributed by <a href="{{ contributor.twitter_url }}">{{ contributor.name }}</a></p>
+            <p>Contributed by <a href="{{ contributor.url }}">{{ contributor.name }}</a></p>
           ]]>
         </content:encoded>
       </item>
