@@ -1,6 +1,6 @@
 ---
 client: Gmail
-version: 17.1.1
+version:
 platform: iPadOS
 status: Working
 languages:
