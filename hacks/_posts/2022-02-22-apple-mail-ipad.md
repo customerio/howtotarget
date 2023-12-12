@@ -16,4 +16,4 @@ contributor: Wilbert Heinen
 }
 ```
 
-Media queries detect the device size to filter out iPhones. Using `:not(.Singleton)` filters out Apple Mail desktop. Depending on the exact device or on the users resolution settings, this may not work on all iPads. For the same reasons it may also target some iPhones.
+Media queries detect the device size to filter out iPhones. Using `:not(.Singleton)` filters out Apple Mail desktop. Depending on the exact device, this may not work on all iPads. For the same reasons it may also target some iPhones.
