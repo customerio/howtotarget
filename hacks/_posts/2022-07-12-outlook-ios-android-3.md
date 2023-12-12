@@ -2,7 +2,7 @@
 client: Outlook
 version:
 platform: iOS, Android, Mac
-status: Working
+status: Deprecated
 languages:
   - CSS
 contributor: Mark Robbins
