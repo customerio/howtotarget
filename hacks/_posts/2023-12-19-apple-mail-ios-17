@@ -1,5 +1,5 @@
 ---
-client: Applemail
+client: Apple Mail
 version:
 platform: iOs17, Mac OS 17
 status: Working
