@@ -1,0 +1,19 @@
+---
+client: Apple Mail
+version:
+platform: iOs17, Mac OS 17
+status: Working
+languages:
+  - CSS
+contributor: Bart den Hertog
+---
+
+```css
+@supports(text-transform: full-width) and (not (-moz-appearance: none)){
+  .your-class-name {
+    /* Replace this comment with your styles */
+  }
+}
+```
+
+`text-transform: full-width` is only supported in more recent versions of AppleMail. It's also supported in Firefox but adding `(not (-moz-appearance: none))` will remove that.
