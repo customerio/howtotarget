@@ -1,26 +1,47 @@
-// Live filtering of the hacks
-let searchInput = document.getElementById("filter-input");
-let hacks = document.querySelectorAll(".hack");
+document.addEventListener("DOMContentLoaded", function () {
+  // Live filtering of the hacks
+  let searchInput = document.getElementById("filter-input");
+  let hacks = document.querySelectorAll(".hack");
 
-function liveSearch() {
-  let search_query = document.getElementById("filter-input").value;
+  function liveSearch() {
+    let search_query = document.getElementById("filter-input").value;
 
-  for (var i = 0; i < hacks.length; i++) {
-    let hackHeading = hacks[i].querySelector(".hack__heading");
+    for (var i = 0; i < hacks.length; i++) {
+      let hackHeading = hacks[i].querySelector(".hack__heading");
 
-    if (
-      hackHeading.textContent.toLowerCase().includes(search_query.toLowerCase())
-    ) {
-      hacks[i].classList.remove("hidden");
-    } else {
-      hacks[i].classList.add("hidden");
+      if (
+        hackHeading.textContent
+          .toLowerCase()
+          .includes(search_query.toLowerCase())
+      ) {
+        hacks[i].classList.remove("hidden");
+      } else {
+        hacks[i].classList.add("hidden");
+      }
     }
   }
-}
 
-searchInput.addEventListener("keyup", () => {
+  var prepopulatedWord = getURLParameter("client");
+  if (prepopulatedWord) {
+    searchInput.value = prepopulatedWord;
+  }
+
+  searchInput.addEventListener("keyup", () => {
+    liveSearch();
+  });
+
   liveSearch();
 });
+
+function getURLParameter(name) {
+  return (
+    decodeURIComponent(
+      (new RegExp("[?|&]" + name + "=" + "([^&;]+?)(&|#|;|$)").exec(
+        location.search
+      ) || [null, ""])[1].replace(/\+/g, "%20")
+    ) || null
+  );
+}
 
 // toggle deprecated hacks
 let deprecatedCheckbox = document.getElementById("filter-deprecated");
@@ -77,4 +98,4 @@ subscribeForm.addEventListener("submit", async (e) => {
     alert("Something went wrong! Please try again later.");
     return;
   }
-});
+}); // JavaScript Document
