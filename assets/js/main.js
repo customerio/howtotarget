@@ -4,16 +4,17 @@ document.addEventListener("DOMContentLoaded", function () {
   let hacks = document.querySelectorAll(".hack");
 
   function liveSearch() {
-    let search_query = document.getElementById("filter-input").value;
+    let searchQuery = searchInput.value.toLowerCase().trim();
+    let searchWords = searchQuery.split(/\s+/);
 
     for (var i = 0; i < hacks.length; i++) {
-      let hackHeading = hacks[i].querySelector(".hack__heading");
+      let hackHeadingText = hacks[i]
+        .querySelector(".hack__heading")
+        .innerText.toLowerCase();
 
-      if (
-        hackHeading.textContent
-          .toLowerCase()
-          .includes(search_query.toLowerCase())
-      ) {
+      let isMatch = searchWords.every((word) => hackHeadingText.includes(word));
+
+      if (isMatch) {
         hacks[i].classList.remove("hidden");
       } else {
         hacks[i].classList.add("hidden");
@@ -21,10 +22,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  var prepopulatedWord = getURLParameter("client");
-  if (prepopulatedWord) {
-    searchInput.value = prepopulatedWord;
+  let client = getURLParameter("client");
+  let platform = getURLParameter("platform");
+  let q = getURLParameter("q");
+
+  let combinedSearchString = "";
+  if (client) {
+    combinedSearchString += client;
   }
+  if (platform) {
+    combinedSearchString += " " + platform;
+  }
+  if (q) {
+    combinedSearchString += " " + q;
+  }
+
+  combinedSearchString = combinedSearchString.trim();
+
+  searchInput.value = combinedSearchString;
 
   searchInput.addEventListener("keyup", () => {
     liveSearch();
