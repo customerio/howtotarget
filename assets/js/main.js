@@ -48,6 +48,36 @@ document.addEventListener("DOMContentLoaded", function () {
   liveSearch();
 });
 
+// share link
+let shareButton = document.getElementById("shareButton");
+shareButton.addEventListener("click", shareLink);
+
+function shareLink() {
+  let searchInput = document.getElementById("filter-input");
+  const copied = document.querySelector("#shareButton span");
+  let deprecatedCheckbox = document.getElementById("filter-deprecated");
+  let currentSearchValue = searchInput.value;
+  let depChecked = "";
+
+  if (deprecatedCheckbox.checked) {
+    depChecked += "&deprecated=true";
+  }
+  let url = `https://www.howtotarget.email/?q=${encodeURIComponent(
+    currentSearchValue
+  )}${depChecked}`;
+  navigator.clipboard
+    .writeText(url)
+    .then(() => {
+      copied.classList.add("success");
+      setTimeout(() => {
+        copied.classList.remove("success");
+      }, 2000);
+    })
+    .catch((err) => {
+      console.error("Error in copying text: ", err);
+    });
+}
+
 function getURLParameter(name) {
   return (
     decodeURIComponent(
@@ -59,14 +89,22 @@ function getURLParameter(name) {
 }
 
 // toggle deprecated hacks
-let deprecatedCheckbox = document.getElementById("filter-deprecated");
-let hacksWrapper = document.querySelector(".hacks");
+document.addEventListener("DOMContentLoaded", function () {
+  let depURL = getURLParameter("deprecated");
+  let deprecatedCheckbox = document.getElementById("filter-deprecated");
+  let hacksWrapper = document.querySelector(".hacks");
 
-deprecatedCheckbox.addEventListener("change", () => {
-  hacksWrapper.classList.toggle(
-    "hacks--show-deprecated",
-    deprecatedCheckbox.checked
-  );
+  if (depURL === "true") {
+    deprecatedCheckbox.checked = true;
+    hacksWrapper.classList.add("hacks--show-deprecated");
+  }
+
+  deprecatedCheckbox.addEventListener("change", () => {
+    hacksWrapper.classList.toggle(
+      "hacks--show-deprecated",
+      deprecatedCheckbox.checked
+    );
+  });
 });
 
 // Copy button
