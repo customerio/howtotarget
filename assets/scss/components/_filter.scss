@@ -44,10 +44,10 @@
 }
 
 #shareButton span {
-	opacity: 0;
-}
-
-.copied {
-	transition: var(--transition-all-medium);
-	opacity: 1;
-}
+    opacity: 0;
+    transition: var(--transition-all-long);
+  }
+  
+  #shareButton span.success {
+    opacity: 1;
+  }
