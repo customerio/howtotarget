@@ -35,6 +35,15 @@
 }
 
 #shareButton p {
-	line-height: 16px;
-	margin-top: 10px;
+	line-height: var(--line-height-sm);
+	margin-top: var(--spacing-sm);
+}
+
+#shareButton span {
+	opacity: 0;
+}
+
+.copied {
+	transition: var(--transition-all-medium);
+	opacity: 1;
 }
