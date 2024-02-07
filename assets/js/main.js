@@ -1,36 +1,110 @@
-// Live filtering of the hacks
-let searchInput = document.getElementById("filter-input");
-let hacks = document.querySelectorAll(".hack");
+document.addEventListener("DOMContentLoaded", function () {
+  // Live filtering of the hacks
+  let searchInput = document.getElementById("filter-input");
+  let hacks = document.querySelectorAll(".hack");
 
-function liveSearch() {
-  let search_query = document.getElementById("filter-input").value;
+  function liveSearch() {
+    let searchQuery = searchInput.value.toLowerCase().trim();
+    let searchWords = searchQuery.split(/\s+/);
 
-  for (var i = 0; i < hacks.length; i++) {
-    let hackHeading = hacks[i].querySelector(".hack__heading");
+    for (var i = 0; i < hacks.length; i++) {
+      let hackHeadingText = hacks[i]
+        .querySelector(".hack__heading")
+        .innerText.toLowerCase();
 
-    if (
-      hackHeading.textContent.toLowerCase().includes(search_query.toLowerCase())
-    ) {
-      hacks[i].classList.remove("hidden");
-    } else {
-      hacks[i].classList.add("hidden");
+      let isMatch = searchWords.every((word) => hackHeadingText.includes(word));
+
+      if (isMatch) {
+        hacks[i].classList.remove("hidden");
+      } else {
+        hacks[i].classList.add("hidden");
+      }
     }
   }
-}
 
-searchInput.addEventListener("keyup", () => {
+  let client = getURLParameter("client");
+  let platform = getURLParameter("platform");
+  let q = getURLParameter("q");
+
+  let combinedSearchString = "";
+  if (client) {
+    combinedSearchString += client;
+  }
+  if (platform) {
+    combinedSearchString += " " + platform;
+  }
+  if (q) {
+    combinedSearchString += " " + q;
+  }
+
+  combinedSearchString = combinedSearchString.trim();
+
+  searchInput.value = combinedSearchString;
+
+  searchInput.addEventListener("keyup", () => {
+    liveSearch();
+  });
+
   liveSearch();
 });
 
-// toggle deprecated hacks
-let deprecatedCheckbox = document.getElementById("filter-deprecated");
-let hacksWrapper = document.querySelector(".hacks");
+// share link
+let shareButton = document.getElementById("shareButton");
+shareButton.addEventListener("click", shareLink);
 
-deprecatedCheckbox.addEventListener("change", () => {
-  hacksWrapper.classList.toggle(
-    "hacks--show-deprecated",
-    deprecatedCheckbox.checked
+function shareLink() {
+  let searchInput = document.getElementById("filter-input");
+  const copied = document.querySelector("#shareButton span");
+  let deprecatedCheckbox = document.getElementById("filter-deprecated");
+  let currentSearchValue = searchInput.value;
+  let depChecked = "";
+
+  if (deprecatedCheckbox.checked) {
+    depChecked += "&deprecated=true";
+  }
+  let url = `https://www.howtotarget.email/?q=${encodeURIComponent(
+    currentSearchValue
+  )}${depChecked}`;
+  navigator.clipboard
+    .writeText(url)
+    .then(() => {
+      copied.classList.add("success");
+      setTimeout(() => {
+        copied.classList.remove("success");
+      }, 2000);
+    })
+    .catch((err) => {
+      console.error("Error in copying text: ", err);
+    });
+}
+
+function getURLParameter(name) {
+  return (
+    decodeURIComponent(
+      (new RegExp("[?|&]" + name + "=" + "([^&;]+?)(&|#|;|$)").exec(
+        location.search
+      ) || [null, ""])[1].replace(/\+/g, "%20")
+    ) || null
   );
+}
+
+// toggle deprecated hacks
+document.addEventListener("DOMContentLoaded", function () {
+  let depURL = getURLParameter("deprecated");
+  let deprecatedCheckbox = document.getElementById("filter-deprecated");
+  let hacksWrapper = document.querySelector(".hacks");
+
+  if (depURL === "true") {
+    deprecatedCheckbox.checked = true;
+    hacksWrapper.classList.add("hacks--show-deprecated");
+  }
+
+  deprecatedCheckbox.addEventListener("change", () => {
+    hacksWrapper.classList.toggle(
+      "hacks--show-deprecated",
+      deprecatedCheckbox.checked
+    );
+  });
 });
 
 // Copy button
@@ -77,4 +151,4 @@ subscribeForm.addEventListener("submit", async (e) => {
     alert("Something went wrong! Please try again later.");
     return;
   }
-});
+}); // JavaScript Document

@@ -33,3 +33,21 @@
 	gap: var(--spacing-xs);
 	margin-top: var(--spacing-md);
 }
+
+#shareButton {
+	cursor: pointer;
+}
+
+#shareButton p {
+	line-height: var(--line-height-sm);
+	margin-top: var(--spacing-sm);
+}
+
+#shareButton span {
+    opacity: 0;
+    transition: var(--transition-all-long);
+  }
+  
+  #shareButton span.success {
+    opacity: 1;
+  }
