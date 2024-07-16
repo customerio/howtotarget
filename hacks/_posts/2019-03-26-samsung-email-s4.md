@@ -1,7 +1,7 @@
 ---
 client: Samsung Email
 version:
-platform: S4
+platform: Microsoft accounts
 status: Working
 languages:
   - CSS
@@ -9,7 +9,9 @@ contributor: Mark Robbins
 ---
 
 ```css
-#secdiv {
+#secdiv .your-class-name {
   /* Replace this comment with your styles */
 }
 ```
+
+This will only target accounts that use Microsoft email addresses (outlook.com, live.com, hotmail.com etc.)
