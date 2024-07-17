@@ -1,7 +1,7 @@
 ---
 client: Samsung Email
 version:
-platform: Standard
+platform: S5-present
 status: Working
 languages:
   - CSS
@@ -13,5 +13,3 @@ contributor: Mark Robbins
   /* Replace this comment with your styles */
 }
 ```
-
-This won't target accounts that use Microsoft email addresses (outlook.com, live.com, hotmail.com etc.)
