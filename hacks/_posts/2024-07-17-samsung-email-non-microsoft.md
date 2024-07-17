@@ -1,15 +1,16 @@
 ---
 client: Samsung Email
 version:
-platform: S4 and under
+platform: with a non-microsoft account
 status: Working
 languages:
   - CSS
 contributor: Mark Robbins
 ---
 
+
 ```css
-#secdiv .your-class-name {
+& #MessageViewBody .your-class-name {
   /* Replace this comment with your styles */
 }
 ```
