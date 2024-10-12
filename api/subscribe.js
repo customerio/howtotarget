@@ -1,5 +1,5 @@
 export default async function subscribe(req, res) {
-  const response = await fetch("https://api.parcel.io/important-tips", {
+  const response = await fetch("https://api.studio.parcel.io/important-tips", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
