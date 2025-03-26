@@ -8,9 +8,8 @@ languages:
 contributor: Matthieu Solente
 ---
 
-
 ```css
-#ReadMailMainWrapper .your-class-name{
-	/* Replace this comment with your styles */
+#ReadMailMainWrapper .your-class-name {
+  /* Replace this comment with your styles */
 }
 ```
