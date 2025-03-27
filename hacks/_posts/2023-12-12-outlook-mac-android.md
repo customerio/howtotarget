@@ -1,15 +1,16 @@
 ---
-client: Samsung Email
+client: Outlook
 version:
-platform: S4 and under
+platform: Android, Mac
 status: Working
 languages:
   - CSS
-contributor: Mark Robbins
+contributor: Niven Ranchhod
 ---
 
 ```css
-#secdiv .your-class-name {
+#converted-body .your-class-name {
   /* Replace this comment with your styles */
 }
 ```
+

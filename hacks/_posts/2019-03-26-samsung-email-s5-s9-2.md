@@ -1,7 +1,7 @@
 ---
 client: Samsung Email
 version:
-platform: S5–S9
+platform: S5-present
 status: Working
 languages:
   - CSS
@@ -9,7 +9,7 @@ contributor: Mark Robbins
 ---
 
 ```css
-#MessageViewBody {
+#MessageViewBody .your-class-name {
   /* Replace this comment with your styles */
 }
 ```

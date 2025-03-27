@@ -1,9 +1,9 @@
 :root {
-  --color-brand: #389bff;
+  --color-brand: #389BFF;
 
   --color-fg-primary: #2E3538;
   --color-fg-secondary: #606F76;
-  --color-fg-accent: #0C7942;
+  --color-fg-accent: var(--color-brand);
   --color-fg-success: #0C7942;
   --color-fg-warning: #A5610E;
   --color-fg-danger: #C33022;
@@ -24,7 +24,7 @@
 
     --color-fg-primary: #F1F3F3;
     --color-fg-secondary: #A5B0B6;
-    --color-fg-accent: #0C7942;
+    --color-fg-accent: var(--color-brand);
     --color-fg-success: #2EB873;
     --color-fg-warning: #D49A54;
     --color-fg-danger: #DA766C;
