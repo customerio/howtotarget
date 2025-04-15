@@ -1,5 +1,5 @@
 ---
-lient: Outlook
+client: Outlook
 version:
 platform: webmail
 status: Working
